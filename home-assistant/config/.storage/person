@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "minor_version": 1,
+  "key": "person",
+  "data": {
+    "items": [
+      {
+        "id": "modestas",
+        "name": "Modestas",
+        "user_id": "8344a08df80f4719baec01ac4f319aec",
+        "device_trackers": []
+      }
+    ]
+  }
+}

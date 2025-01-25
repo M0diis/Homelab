@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "minor_version": 7,
+  "key": "core.area_registry",
+  "data": {
+    "areas": [
+      {
+        "aliases": [],
+        "floor_id": "first",
+        "icon": "mdi:sofa",
+        "id": "living_room",
+        "labels": [],
+        "name": "Living Room",
+        "picture": null,
+        "created_at": "2024-12-19T10:57:41.378314+00:00",
+        "modified_at": "2024-12-19T12:21:13.673004+00:00"
+      },
+      {
+        "aliases": [],
+        "floor_id": "first",
+        "icon": "mdi:fridge",
+        "id": "kitchen",
+        "labels": [],
+        "name": "Kitchen",
+        "picture": null,
+        "created_at": "2024-12-19T10:57:41.378362+00:00",
+        "modified_at": "2024-12-19T12:21:02.613873+00:00"
+      },
+      {
+        "aliases": [],
+        "floor_id": "second",
+        "icon": "mdi:bed",
+        "id": "bedroom",
+        "labels": [],
+        "name": "Bedroom",
+        "picture": null,
+        "created_at": "2024-12-19T10:57:41.378387+00:00",
+        "modified_at": "2024-12-19T12:21:18.793265+00:00"
+      },
+      {
+        "aliases": [],
+        "floor_id": "second",
+        "icon": "mdi:briefcase",
+        "id": "work_room",
+        "labels": [],
+        "name": "Work Room",
+        "picture": null,
+        "created_at": "2024-12-19T11:03:21.419450+00:00",
+        "modified_at": "2024-12-19T12:20:49.815579+00:00"
+      }
+    ]
+  }
+}

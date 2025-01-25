@@ -1,0 +1,1043 @@
+2025-01-23 21:07:12.8|Debug|ProcessProvider|Found 0 processes with the name: Prowlarr.Console
+2025-01-23 21:07:12.8|Debug|ProcessProvider|Found 1 processes with the name: Prowlarr
+2025-01-23 21:07:12.8|Debug|ProcessProvider| - [144] Prowlarr
+2025-01-23 21:07:12.9|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-01-23 21:07:12.9|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-01-23 21:07:12.9|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-01-23 21:07:12.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-01-23 21:07:12.9|Info|DatabaseEngineVersionCheck|SQLite 3.47.1
+2025-01-23 21:07:12.9|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0066428s
+2025-01-23 21:07:12.9|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-01-23 21:07:12.9|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0071181s
+2025-01-23 21:07:12.9|Info|FluentMigrator.Runner.MigrationRunner|VersionMigration migrating
+2025-01-23 21:07:12.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-01-23 21:07:12.9|Info|FluentMigrator.Runner.MigrationRunner|CreateTable VersionInfo
+2025-01-23 21:07:12.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "VersionInfo" ("Version" INTEGER NOT NULL)
+2025-01-23 21:07:12.9|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0007936s
+2025-01-23 21:07:12.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-01-23 21:07:12.9|Info|FluentMigrator.Runner.MigrationRunner|VersionMigration migrated
+2025-01-23 21:07:12.9|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0050684s
+2025-01-23 21:07:12.9|Info|FluentMigrator.Runner.MigrationRunner|VersionUniqueMigration migrating
+2025-01-23 21:07:12.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-01-23 21:07:12.9|Info|FluentMigrator.Runner.MigrationRunner|CreateIndex VersionInfo (Version)
+2025-01-23 21:07:12.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE UNIQUE INDEX "UC_Version" ON "VersionInfo" ("Version" ASC)
+2025-01-23 21:07:12.9|Info|FluentMigrator.Runner.MigrationRunner|=> 0.001043s
+2025-01-23 21:07:12.9|Info|FluentMigrator.Runner.MigrationRunner|AlterTable VersionInfo
+2025-01-23 21:07:12.9|Info|FluentMigrator.Runner.MigrationRunner|=> 3.2E-06s
+2025-01-23 21:07:12.9|Info|FluentMigrator.Runner.MigrationRunner|CreateColumn VersionInfo AppliedOn DateTime
+2025-01-23 21:07:12.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|ALTER TABLE "VersionInfo" ADD COLUMN "AppliedOn" DATETIME
+2025-01-23 21:07:12.9|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0017013s
+2025-01-23 21:07:12.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-01-23 21:07:12.9|Info|FluentMigrator.Runner.MigrationRunner|VersionUniqueMigration migrated
+2025-01-23 21:07:12.9|Info|FluentMigrator.Runner.MigrationRunner|=> 0.004183s
+2025-01-23 21:07:12.9|Info|FluentMigrator.Runner.MigrationRunner|VersionDescriptionMigration migrating
+2025-01-23 21:07:12.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-01-23 21:07:12.9|Info|FluentMigrator.Runner.MigrationRunner|AlterTable VersionInfo
+2025-01-23 21:07:12.9|Info|FluentMigrator.Runner.MigrationRunner|=> 3.7E-06s
+2025-01-23 21:07:12.9|Info|FluentMigrator.Runner.MigrationRunner|CreateColumn VersionInfo Description String
+2025-01-23 21:07:12.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|ALTER TABLE "VersionInfo" ADD COLUMN "Description" TEXT
+2025-01-23 21:07:12.9|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0012399s
+2025-01-23 21:07:12.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-01-23 21:07:12.9|Info|FluentMigrator.Runner.MigrationRunner|VersionDescriptionMigration migrated
+2025-01-23 21:07:12.9|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0034056s
+2025-01-23 21:07:12.9|Info|FluentMigrator.Runner.MigrationRunner|1: InitialSetup migrating
+2025-01-23 21:07:12.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-01-23 21:07:12.9|Info|InitialSetup|Starting migration of Log DB to 1
+2025-01-23 21:07:12.9|Info|FluentMigrator.Runner.MigrationRunner|CreateTable Logs
+2025-01-23 21:07:12.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "Logs" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "Message" TEXT NOT NULL, "Time" DATETIME NOT NULL, "Logger" TEXT NOT NULL, "Exception" TEXT, "ExceptionType" TEXT, "Level" TEXT NOT NULL)
+2025-01-23 21:07:12.9|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0024381s
+2025-01-23 21:07:12.9|Info|FluentMigrator.Runner.MigrationRunner|CreateIndex Logs (Time)
+2025-01-23 21:07:12.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_Logs_Time" ON "Logs" ("Time" ASC)
+2025-01-23 21:07:12.9|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0010618s
+2025-01-23 21:07:12.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (1, '2025-01-23T21:07:12', 'InitialSetup')
+2025-01-23 21:07:12.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-01-23 21:07:12.9|Info|FluentMigrator.Runner.MigrationRunner|1: InitialSetup migrated
+2025-01-23 21:07:12.9|Info|FluentMigrator.Runner.MigrationRunner|=> 0.004902s
+2025-01-23 21:07:12.9|Info|FluentMigrator.Runner.MigrationRunner|2: ApplicationStatus migrating
+2025-01-23 21:07:12.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-01-23 21:07:12.9|Info|ApplicationStatus|Starting migration of Log DB to 2
+2025-01-23 21:07:12.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (2, '2025-01-23T21:07:12', 'ApplicationStatus')
+2025-01-23 21:07:12.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-01-23 21:07:12.9|Info|FluentMigrator.Runner.MigrationRunner|2: ApplicationStatus migrated
+2025-01-23 21:07:12.9|Info|FluentMigrator.Runner.MigrationRunner|=> 0.00449s
+2025-01-23 21:07:12.9|Info|FluentMigrator.Runner.MigrationRunner|3: IndexerProps migrating
+2025-01-23 21:07:12.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-01-23 21:07:12.9|Info|IndexerProps|Starting migration of Log DB to 3
+2025-01-23 21:07:12.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (3, '2025-01-23T21:07:12', 'IndexerProps')
+2025-01-23 21:07:12.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-01-23 21:07:12.9|Info|FluentMigrator.Runner.MigrationRunner|3: IndexerProps migrated
+2025-01-23 21:07:12.9|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0036968s
+2025-01-23 21:07:12.9|Info|FluentMigrator.Runner.MigrationRunner|4: add_update_history migrating
+2025-01-23 21:07:12.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-01-23 21:07:12.9|Info|add_update_history|Starting migration of Log DB to 4
+2025-01-23 21:07:12.9|Info|FluentMigrator.Runner.MigrationRunner|CreateTable UpdateHistory
+2025-01-23 21:07:12.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "UpdateHistory" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "Date" DATETIME NOT NULL, "Version" TEXT NOT NULL, "EventType" INTEGER NOT NULL)
+2025-01-23 21:07:12.9|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0016381s
+2025-01-23 21:07:12.9|Info|FluentMigrator.Runner.MigrationRunner|CreateIndex UpdateHistory (Date)
+2025-01-23 21:07:12.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_UpdateHistory_Date" ON "UpdateHistory" ("Date" ASC)
+2025-01-23 21:07:12.9|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0006673s
+2025-01-23 21:07:12.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (4, '2025-01-23T21:07:12', 'add_update_history')
+2025-01-23 21:07:12.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-01-23 21:07:12.9|Info|FluentMigrator.Runner.MigrationRunner|4: add_update_history migrated
+2025-01-23 21:07:12.9|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0033125s
+2025-01-23 21:07:12.9|Info|FluentMigrator.Runner.MigrationRunner|5: update_notifiarr migrating
+2025-01-23 21:07:12.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-01-23 21:07:12.9|Info|update_notifiarr|Starting migration of Log DB to 5
+2025-01-23 21:07:12.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (5, '2025-01-23T21:07:12', 'update_notifiarr')
+2025-01-23 21:07:12.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-01-23 21:07:12.9|Info|FluentMigrator.Runner.MigrationRunner|5: update_notifiarr migrated
+2025-01-23 21:07:12.9|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0035331s
+2025-01-23 21:07:12.9|Info|FluentMigrator.Runner.MigrationRunner|6: app_profiles migrating
+2025-01-23 21:07:12.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-01-23 21:07:12.9|Info|app_profiles|Starting migration of Log DB to 6
+2025-01-23 21:07:12.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (6, '2025-01-23T21:07:12', 'app_profiles')
+2025-01-23 21:07:12.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-01-23 21:07:13.0|Info|FluentMigrator.Runner.MigrationRunner|6: app_profiles migrated
+2025-01-23 21:07:13.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0048495s
+2025-01-23 21:07:13.0|Info|FluentMigrator.Runner.MigrationRunner|7: history_failed migrating
+2025-01-23 21:07:13.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-01-23 21:07:13.0|Info|history_failed|Starting migration of Log DB to 7
+2025-01-23 21:07:13.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (7, '2025-01-23T21:07:13', 'history_failed')
+2025-01-23 21:07:13.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-01-23 21:07:13.0|Info|FluentMigrator.Runner.MigrationRunner|7: history_failed migrated
+2025-01-23 21:07:13.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0058109s
+2025-01-23 21:07:13.0|Info|FluentMigrator.Runner.MigrationRunner|8: redacted_api migrating
+2025-01-23 21:07:13.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-01-23 21:07:13.0|Info|redacted_api|Starting migration of Log DB to 8
+2025-01-23 21:07:13.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (8, '2025-01-23T21:07:13', 'redacted_api')
+2025-01-23 21:07:13.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-01-23 21:07:13.0|Info|FluentMigrator.Runner.MigrationRunner|8: redacted_api migrated
+2025-01-23 21:07:13.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0040844s
+2025-01-23 21:07:13.0|Info|FluentMigrator.Runner.MigrationRunner|10: IndexerProxies migrating
+2025-01-23 21:07:13.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-01-23 21:07:13.0|Info|IndexerProxies|Starting migration of Log DB to 10
+2025-01-23 21:07:13.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (10, '2025-01-23T21:07:13', 'IndexerProxies')
+2025-01-23 21:07:13.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-01-23 21:07:13.0|Info|FluentMigrator.Runner.MigrationRunner|10: IndexerProxies migrated
+2025-01-23 21:07:13.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0053102s
+2025-01-23 21:07:13.0|Info|FluentMigrator.Runner.MigrationRunner|11: app_indexer_remote_name migrating
+2025-01-23 21:07:13.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-01-23 21:07:13.0|Info|app_indexer_remote_name|Starting migration of Log DB to 11
+2025-01-23 21:07:13.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (11, '2025-01-23T21:07:13', 'app_indexer_remote_name')
+2025-01-23 21:07:13.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-01-23 21:07:13.0|Info|FluentMigrator.Runner.MigrationRunner|11: app_indexer_remote_name migrated
+2025-01-23 21:07:13.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0048049s
+2025-01-23 21:07:13.0|Info|FluentMigrator.Runner.MigrationRunner|13: desi_gazelle_to_unit3d migrating
+2025-01-23 21:07:13.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-01-23 21:07:13.0|Info|desi_gazelle_to_unit3d|Starting migration of Log DB to 13
+2025-01-23 21:07:13.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (13, '2025-01-23T21:07:13', 'desi_gazelle_to_unit3d')
+2025-01-23 21:07:13.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-01-23 21:07:13.0|Info|FluentMigrator.Runner.MigrationRunner|13: desi_gazelle_to_unit3d migrated
+2025-01-23 21:07:13.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0047241s
+2025-01-23 21:07:13.0|Info|FluentMigrator.Runner.MigrationRunner|14: add_on_update_to_notifications migrating
+2025-01-23 21:07:13.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-01-23 21:07:13.0|Info|add_on_update_to_notifications|Starting migration of Log DB to 14
+2025-01-23 21:07:13.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (14, '2025-01-23T21:07:13', 'add_on_update_to_notifications')
+2025-01-23 21:07:13.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-01-23 21:07:13.0|Info|FluentMigrator.Runner.MigrationRunner|14: add_on_update_to_notifications migrated
+2025-01-23 21:07:13.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0041945s
+2025-01-23 21:07:13.0|Info|FluentMigrator.Runner.MigrationRunner|15: IndexerVersions migrating
+2025-01-23 21:07:13.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-01-23 21:07:13.0|Info|IndexerVersions|Starting migration of Log DB to 15
+2025-01-23 21:07:13.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (15, '2025-01-23T21:07:13', 'IndexerVersions')
+2025-01-23 21:07:13.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-01-23 21:07:13.0|Info|FluentMigrator.Runner.MigrationRunner|15: IndexerVersions migrated
+2025-01-23 21:07:13.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0044571s
+2025-01-23 21:07:13.0|Info|FluentMigrator.Runner.MigrationRunner|16: cleanup_config migrating
+2025-01-23 21:07:13.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-01-23 21:07:13.0|Info|cleanup_config|Starting migration of Log DB to 16
+2025-01-23 21:07:13.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (16, '2025-01-23T21:07:13', 'cleanup_config')
+2025-01-23 21:07:13.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-01-23 21:07:13.0|Info|FluentMigrator.Runner.MigrationRunner|16: cleanup_config migrated
+2025-01-23 21:07:13.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0034369s
+2025-01-23 21:07:13.0|Info|FluentMigrator.Runner.MigrationRunner|17: indexer_cleanup migrating
+2025-01-23 21:07:13.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-01-23 21:07:13.0|Info|indexer_cleanup|Starting migration of Log DB to 17
+2025-01-23 21:07:13.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (17, '2025-01-23T21:07:13', 'indexer_cleanup')
+2025-01-23 21:07:13.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-01-23 21:07:13.0|Info|FluentMigrator.Runner.MigrationRunner|17: indexer_cleanup migrated
+2025-01-23 21:07:13.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0042431s
+2025-01-23 21:07:13.0|Info|FluentMigrator.Runner.MigrationRunner|18: minimum_seeders migrating
+2025-01-23 21:07:13.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-01-23 21:07:13.0|Info|minimum_seeders|Starting migration of Log DB to 18
+2025-01-23 21:07:13.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (18, '2025-01-23T21:07:13', 'minimum_seeders')
+2025-01-23 21:07:13.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-01-23 21:07:13.0|Info|FluentMigrator.Runner.MigrationRunner|18: minimum_seeders migrated
+2025-01-23 21:07:13.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0039571s
+2025-01-23 21:07:13.0|Info|FluentMigrator.Runner.MigrationRunner|19: remove_showrss migrating
+2025-01-23 21:07:13.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-01-23 21:07:13.0|Info|remove_showrss|Starting migration of Log DB to 19
+2025-01-23 21:07:13.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (19, '2025-01-23T21:07:13', 'remove_showrss')
+2025-01-23 21:07:13.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-01-23 21:07:13.0|Info|FluentMigrator.Runner.MigrationRunner|19: remove_showrss migrated
+2025-01-23 21:07:13.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0037574s
+2025-01-23 21:07:13.0|Info|FluentMigrator.Runner.MigrationRunner|20: remove_torrentparadiseml migrating
+2025-01-23 21:07:13.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-01-23 21:07:13.0|Info|remove_torrentparadiseml|Starting migration of Log DB to 20
+2025-01-23 21:07:13.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (20, '2025-01-23T21:07:13', 'remove_torrentparadiseml')
+2025-01-23 21:07:13.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-01-23 21:07:13.0|Info|FluentMigrator.Runner.MigrationRunner|20: remove_torrentparadiseml migrated
+2025-01-23 21:07:13.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.004417s
+2025-01-23 21:07:13.0|Info|FluentMigrator.Runner.MigrationRunner|21: localization_setting_to_string migrating
+2025-01-23 21:07:13.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-01-23 21:07:13.0|Info|localization_setting_to_string|Starting migration of Log DB to 21
+2025-01-23 21:07:13.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (21, '2025-01-23T21:07:13', 'localization_setting_to_string')
+2025-01-23 21:07:13.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-01-23 21:07:13.0|Info|FluentMigrator.Runner.MigrationRunner|21: localization_setting_to_string migrated
+2025-01-23 21:07:13.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0032565s
+2025-01-23 21:07:13.0|Info|FluentMigrator.Runner.MigrationRunner|22: orpheus_api migrating
+2025-01-23 21:07:13.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-01-23 21:07:13.0|Info|orpheus_api|Starting migration of Log DB to 22
+2025-01-23 21:07:13.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (22, '2025-01-23T21:07:13', 'orpheus_api')
+2025-01-23 21:07:13.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-01-23 21:07:13.0|Info|FluentMigrator.Runner.MigrationRunner|22: orpheus_api migrated
+2025-01-23 21:07:13.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0030885s
+2025-01-23 21:07:13.0|Info|FluentMigrator.Runner.MigrationRunner|23: download_client_categories migrating
+2025-01-23 21:07:13.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-01-23 21:07:13.0|Info|download_client_categories|Starting migration of Log DB to 23
+2025-01-23 21:07:13.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (23, '2025-01-23T21:07:13', 'download_client_categories')
+2025-01-23 21:07:13.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-01-23 21:07:13.0|Info|FluentMigrator.Runner.MigrationRunner|23: download_client_categories migrated
+2025-01-23 21:07:13.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0036008s
+2025-01-23 21:07:13.0|Info|FluentMigrator.Runner.MigrationRunner|24: add_salt_to_users migrating
+2025-01-23 21:07:13.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-01-23 21:07:13.0|Info|add_salt_to_users|Starting migration of Log DB to 24
+2025-01-23 21:07:13.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (24, '2025-01-23T21:07:13', 'add_salt_to_users')
+2025-01-23 21:07:13.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-01-23 21:07:13.0|Info|FluentMigrator.Runner.MigrationRunner|24: add_salt_to_users migrated
+2025-01-23 21:07:13.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0038342s
+2025-01-23 21:07:13.0|Info|FluentMigrator.Runner.MigrationRunner|25: speedcd_userpasssettings_to_speedcdsettings migrating
+2025-01-23 21:07:13.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-01-23 21:07:13.0|Info|speedcd_userpasssettings_to_speedcdsettings|Starting migration of Log DB to 25
+2025-01-23 21:07:13.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (25, '2025-01-23T21:07:13', 'speedcd_userpasssettings_to_speedcdsettings')
+2025-01-23 21:07:13.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-01-23 21:07:13.0|Info|FluentMigrator.Runner.MigrationRunner|25: speedcd_userpasssettings_to_speedcdsettings migrated
+2025-01-23 21:07:13.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0043761s
+2025-01-23 21:07:13.0|Info|FluentMigrator.Runner.MigrationRunner|26: torrentday_cookiesettings_to_torrentdaysettings migrating
+2025-01-23 21:07:13.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-01-23 21:07:13.1|Info|torrentday_cookiesettings_to_torrentdaysettings|Starting migration of Log DB to 26
+2025-01-23 21:07:13.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (26, '2025-01-23T21:07:13', 'torrentday_cookiesettings_to_torrentdaysettings')
+2025-01-23 21:07:13.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-01-23 21:07:13.1|Info|FluentMigrator.Runner.MigrationRunner|26: torrentday_cookiesettings_to_torrentdaysettings migrated
+2025-01-23 21:07:13.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0042004s
+2025-01-23 21:07:13.1|Info|FluentMigrator.Runner.MigrationRunner|27: alpharatio_greatposterwall_config_contract migrating
+2025-01-23 21:07:13.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-01-23 21:07:13.1|Info|alpharatio_greatposterwall_config_contract|Starting migration of Log DB to 27
+2025-01-23 21:07:13.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (27, '2025-01-23T21:07:13', 'alpharatio_greatposterwall_config_contract')
+2025-01-23 21:07:13.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-01-23 21:07:13.1|Info|FluentMigrator.Runner.MigrationRunner|27: alpharatio_greatposterwall_config_contract migrated
+2025-01-23 21:07:13.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0040951s
+2025-01-23 21:07:13.1|Info|FluentMigrator.Runner.MigrationRunner|28: remove_notwhatcd migrating
+2025-01-23 21:07:13.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-01-23 21:07:13.1|Info|remove_notwhatcd|Starting migration of Log DB to 28
+2025-01-23 21:07:13.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (28, '2025-01-23T21:07:13', 'remove_notwhatcd')
+2025-01-23 21:07:13.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-01-23 21:07:13.1|Info|FluentMigrator.Runner.MigrationRunner|28: remove_notwhatcd migrated
+2025-01-23 21:07:13.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0037617s
+2025-01-23 21:07:13.1|Info|FluentMigrator.Runner.MigrationRunner|29: add_on_grab_to_notifications migrating
+2025-01-23 21:07:13.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-01-23 21:07:13.1|Info|add_on_grab_to_notifications|Starting migration of Log DB to 29
+2025-01-23 21:07:13.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (29, '2025-01-23T21:07:13', 'add_on_grab_to_notifications')
+2025-01-23 21:07:13.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-01-23 21:07:13.1|Info|FluentMigrator.Runner.MigrationRunner|29: add_on_grab_to_notifications migrated
+2025-01-23 21:07:13.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.00847s
+2025-01-23 21:07:13.1|Info|FluentMigrator.Runner.MigrationRunner|30: animetorrents_use_custom_config_contract migrating
+2025-01-23 21:07:13.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-01-23 21:07:13.1|Info|animetorrents_use_custom_config_contract|Starting migration of Log DB to 30
+2025-01-23 21:07:13.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (30, '2025-01-23T21:07:13', 'animetorrents_use_custom_config_contract')
+2025-01-23 21:07:13.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-01-23 21:07:13.1|Info|FluentMigrator.Runner.MigrationRunner|30: animetorrents_use_custom_config_contract migrated
+2025-01-23 21:07:13.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.005889s
+2025-01-23 21:07:13.1|Info|FluentMigrator.Runner.MigrationRunner|31: apprise_server_url migrating
+2025-01-23 21:07:13.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-01-23 21:07:13.1|Info|apprise_server_url|Starting migration of Log DB to 31
+2025-01-23 21:07:13.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (31, '2025-01-23T21:07:13', 'apprise_server_url')
+2025-01-23 21:07:13.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-01-23 21:07:13.1|Info|FluentMigrator.Runner.MigrationRunner|31: apprise_server_url migrated
+2025-01-23 21:07:13.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0038582s
+2025-01-23 21:07:13.1|Info|FluentMigrator.Runner.MigrationRunner|32: health_restored_notification migrating
+2025-01-23 21:07:13.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-01-23 21:07:13.1|Info|health_restored_notification|Starting migration of Log DB to 32
+2025-01-23 21:07:13.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (32, '2025-01-23T21:07:13', 'health_restored_notification')
+2025-01-23 21:07:13.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-01-23 21:07:13.1|Info|FluentMigrator.Runner.MigrationRunner|32: health_restored_notification migrated
+2025-01-23 21:07:13.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0032901s
+2025-01-23 21:07:13.1|Info|FluentMigrator.Runner.MigrationRunner|33: remove_uc migrating
+2025-01-23 21:07:13.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-01-23 21:07:13.1|Info|remove_uc|Starting migration of Log DB to 33
+2025-01-23 21:07:13.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (33, '2025-01-23T21:07:13', 'remove_uc')
+2025-01-23 21:07:13.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-01-23 21:07:13.1|Info|FluentMigrator.Runner.MigrationRunner|33: remove_uc migrated
+2025-01-23 21:07:13.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0043724s
+2025-01-23 21:07:13.1|Info|FluentMigrator.Runner.MigrationRunner|34: history_fix_data_titles migrating
+2025-01-23 21:07:13.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-01-23 21:07:13.1|Info|history_fix_data_titles|Starting migration of Log DB to 34
+2025-01-23 21:07:13.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (34, '2025-01-23T21:07:13', 'history_fix_data_titles')
+2025-01-23 21:07:13.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-01-23 21:07:13.1|Info|FluentMigrator.Runner.MigrationRunner|34: history_fix_data_titles migrated
+2025-01-23 21:07:13.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0037998s
+2025-01-23 21:07:13.1|Info|FluentMigrator.Runner.MigrationRunner|35: download_client_per_indexer migrating
+2025-01-23 21:07:13.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-01-23 21:07:13.1|Info|download_client_per_indexer|Starting migration of Log DB to 35
+2025-01-23 21:07:13.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (35, '2025-01-23T21:07:13', 'download_client_per_indexer')
+2025-01-23 21:07:13.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-01-23 21:07:13.1|Info|FluentMigrator.Runner.MigrationRunner|35: download_client_per_indexer migrated
+2025-01-23 21:07:13.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0040981s
+2025-01-23 21:07:13.1|Info|FluentMigrator.Runner.MigrationRunner|36: postgres_update_timestamp_columns_to_with_timezone migrating
+2025-01-23 21:07:13.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-01-23 21:07:13.1|Info|postgres_update_timestamp_columns_to_with_timezone|Starting migration of Log DB to 36
+2025-01-23 21:07:13.1|Info|FluentMigrator.Runner.MigrationRunner|AlterTable Logs
+2025-01-23 21:07:13.1|Info|FluentMigrator.Runner.MigrationRunner|=> 1.3E-06s
+2025-01-23 21:07:13.1|Info|FluentMigrator.Runner.MigrationRunner|AlterColumn Logs Time DateTimeOffset
+2025-01-23 21:07:13.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "Logs_temp" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "Message" TEXT NOT NULL, "Time" DATETIME NOT NULL, "Logger" TEXT NOT NULL, "Exception" TEXT, "ExceptionType" TEXT, "Level" TEXT NOT NULL)
+2025-01-23 21:07:13.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "Logs_temp" ("Id", "Message", "Time", "Logger", "Exception", "ExceptionType", "Level") SELECT "Id", "Message", "Time", "Logger", "Exception", "ExceptionType", "Level" FROM "Logs"
+2025-01-23 21:07:13.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|DROP TABLE "Logs"
+2025-01-23 21:07:13.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|ALTER TABLE "Logs_temp" RENAME TO "Logs"
+2025-01-23 21:07:13.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_Logs_Time" ON "Logs" ("Time" ASC)
+2025-01-23 21:07:13.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0060934s
+2025-01-23 21:07:13.1|Info|FluentMigrator.Runner.MigrationRunner|AlterTable UpdateHistory
+2025-01-23 21:07:13.1|Info|FluentMigrator.Runner.MigrationRunner|=> 3.8E-06s
+2025-01-23 21:07:13.1|Info|FluentMigrator.Runner.MigrationRunner|AlterColumn UpdateHistory Date DateTimeOffset
+2025-01-23 21:07:13.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "UpdateHistory_temp" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "Date" DATETIME NOT NULL, "Version" TEXT NOT NULL, "EventType" INTEGER NOT NULL)
+2025-01-23 21:07:13.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "UpdateHistory_temp" ("Id", "Date", "Version", "EventType") SELECT "Id", "Date", "Version", "EventType" FROM "UpdateHistory"
+2025-01-23 21:07:13.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|DROP TABLE "UpdateHistory"
+2025-01-23 21:07:13.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|ALTER TABLE "UpdateHistory_temp" RENAME TO "UpdateHistory"
+2025-01-23 21:07:13.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_UpdateHistory_Date" ON "UpdateHistory" ("Date" ASC)
+2025-01-23 21:07:13.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0073461s
+2025-01-23 21:07:13.1|Info|FluentMigrator.Runner.MigrationRunner|AlterTable VersionInfo
+2025-01-23 21:07:13.1|Info|FluentMigrator.Runner.MigrationRunner|=> 1.4E-06s
+2025-01-23 21:07:13.1|Info|FluentMigrator.Runner.MigrationRunner|AlterColumn VersionInfo AppliedOn DateTimeOffset
+2025-01-23 21:07:13.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "VersionInfo_temp" ("Version" INTEGER NOT NULL, "AppliedOn" DATETIME, "Description" TEXT)
+2025-01-23 21:07:13.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo_temp" ("Version", "AppliedOn", "Description") SELECT "Version", "AppliedOn", "Description" FROM "VersionInfo"
+2025-01-23 21:07:13.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|DROP TABLE "VersionInfo"
+2025-01-23 21:07:13.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|ALTER TABLE "VersionInfo_temp" RENAME TO "VersionInfo"
+2025-01-23 21:07:13.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE UNIQUE INDEX "UC_Version" ON "VersionInfo" ("Version" ASC)
+2025-01-23 21:07:13.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0056268s
+2025-01-23 21:07:13.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (36, '2025-01-23T21:07:13', 'postgres_update_timestamp_columns_to_with_timezone')
+2025-01-23 21:07:13.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-01-23 21:07:13.1|Info|FluentMigrator.Runner.MigrationRunner|36: postgres_update_timestamp_columns_to_with_timezone migrated
+2025-01-23 21:07:13.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0087352s
+2025-01-23 21:07:13.1|Info|FluentMigrator.Runner.MigrationRunner|37: add_notification_status migrating
+2025-01-23 21:07:13.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-01-23 21:07:13.1|Info|add_notification_status|Starting migration of Log DB to 37
+2025-01-23 21:07:13.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (37, '2025-01-23T21:07:13', 'add_notification_status')
+2025-01-23 21:07:13.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-01-23 21:07:13.1|Info|FluentMigrator.Runner.MigrationRunner|37: add_notification_status migrated
+2025-01-23 21:07:13.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0045986s
+2025-01-23 21:07:13.1|Info|FluentMigrator.Runner.MigrationRunner|38: indexers_freeleech_only_config_contract migrating
+2025-01-23 21:07:13.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-01-23 21:07:13.1|Info|indexers_freeleech_only_config_contract|Starting migration of Log DB to 38
+2025-01-23 21:07:13.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (38, '2025-01-23T21:07:13', 'indexers_freeleech_only_config_contract')
+2025-01-23 21:07:13.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-01-23 21:07:13.2|Info|FluentMigrator.Runner.MigrationRunner|38: indexers_freeleech_only_config_contract migrated
+2025-01-23 21:07:13.2|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0051246s
+2025-01-23 21:07:13.2|Info|FluentMigrator.Runner.MigrationRunner|39: email_encryption migrating
+2025-01-23 21:07:13.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-01-23 21:07:13.2|Info|email_encryption|Starting migration of Log DB to 39
+2025-01-23 21:07:13.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (39, '2025-01-23T21:07:13', 'email_encryption')
+2025-01-23 21:07:13.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-01-23 21:07:13.2|Info|FluentMigrator.Runner.MigrationRunner|39: email_encryption migrated
+2025-01-23 21:07:13.2|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0035829s
+2025-01-23 21:07:13.2|Info|FluentMigrator.Runner.MigrationRunner|40: newznab_category_to_capabilities_settings migrating
+2025-01-23 21:07:13.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-01-23 21:07:13.2|Info|newznab_category_to_capabilities_settings|Starting migration of Log DB to 40
+2025-01-23 21:07:13.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (40, '2025-01-23T21:07:13', 'newznab_category_to_capabilities_settings')
+2025-01-23 21:07:13.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-01-23 21:07:13.2|Info|FluentMigrator.Runner.MigrationRunner|40: newznab_category_to_capabilities_settings migrated
+2025-01-23 21:07:13.2|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0035762s
+2025-01-23 21:07:13.2|Info|FluentMigrator.Runner.MigrationRunner|41: gazelle_freeleech_token_options migrating
+2025-01-23 21:07:13.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-01-23 21:07:13.2|Info|gazelle_freeleech_token_options|Starting migration of Log DB to 41
+2025-01-23 21:07:13.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (41, '2025-01-23T21:07:13', 'gazelle_freeleech_token_options')
+2025-01-23 21:07:13.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-01-23 21:07:13.2|Info|FluentMigrator.Runner.MigrationRunner|41: gazelle_freeleech_token_options migrated
+2025-01-23 21:07:13.2|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0035547s
+2025-01-23 21:07:13.2|Debug|MigrationController|Took: 00:00:00.3125005
+2025-01-23 21:07:13.3|Info|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:9696
+2025-01-23 21:07:13.4|Info|UpdaterConfigProvider|Update mechanism BuiltIn not supported in the current configuration, changing to Docker.
+2025-01-23 21:07:13.5|Info|AppSyncProfileService|Setting up default app profile
+2025-01-23 21:07:13.5|Debug|NotificationFactory|Initializing Providers. Count 20
+2025-01-23 21:07:13.5|Info|CommandExecutor|Starting 3 threads for tasks.
+2025-01-23 21:07:13.6|Debug|HttpClient|Downloading [https://indexers.prowlarr.com/master/11/package.zip] to [/config/Definitions/indexers.zip]
+2025-01-23 21:07:13.6|Info|ManagedHttpDispatcher|IPv4 is available: True, IPv6 will be disabled
+2025-01-23 21:07:14.0|Debug|HttpClient|Downloading Completed. took 0s
+2025-01-23 21:07:14.1|Debug|IndexerDefinitionUpdateService|Updated indexer definitions
+2025-01-23 21:07:14.1|Debug|IndexerFactory|Initializing Providers. Count 67
+2025-01-23 21:07:14.1|Debug|IndexerProxyFactory|Initializing Providers. Count 4
+2025-01-23 21:07:14.1|Debug|DownloadClientFactory|Initializing Providers. Count 18
+2025-01-23 21:07:14.1|Debug|ApplicationFactory|Initializing Providers. Count 7
+2025-01-23 21:07:14.1|Info|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2025-01-23 21:07:14.1|Info|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2025-01-23 21:07:14.1|Info|Microsoft.Hosting.Lifetime|Content root path: /app/bin
+2025-01-23 21:07:14.7|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-01-23 21:07:14.9|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-01-23 21:07:14.9|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-01-23 21:07:14.9|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-01-23 21:07:14.9|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-01-23 21:07:15.0|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-01-23 21:07:15.0|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-01-23 21:07:15.1|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-01-23 21:07:15.1|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-01-23 21:07:15.1|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-01-23 21:07:15.1|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-01-23 21:07:15.1|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-01-23 21:07:15.3|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:07:15.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:07:15.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:07:15.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:07:15.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:07:15.4|Debug|Api|[GET] /api/v1/customFilter: 200.OK (53 ms)
+2025-01-23 21:07:15.4|Debug|Api|[GET] /api/v1/indexerStatus: 200.OK (43 ms)
+2025-01-23 21:07:15.4|Debug|Api|[GET] /api/v1/tag: 200.OK (51 ms)
+2025-01-23 21:07:15.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:07:15.4|Debug|Api|[GET] /api/v1/appprofile: 200.OK (47 ms)
+2025-01-23 21:07:15.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:07:15.4|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-01-23 21:07:15.4|Debug|Api|[GET] /api/v1/indexer/categories: 200.OK (7 ms)
+2025-01-23 21:07:15.4|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-01-23 21:07:15.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:07:15.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:07:15.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:07:15.4|Debug|Api|[GET] /api/v1/indexer: 200.OK (70 ms)
+2025-01-23 21:07:15.4|Debug|Api|[GET] /api/v1/localization: 200.OK (13 ms)
+2025-01-23 21:07:15.4|Debug|Api|[GET] /api/v1/config/ui: 200.OK (29 ms)
+2025-01-23 21:07:15.5|Debug|Api|[GET] /api/v1/system/status: 200.OK (56 ms)
+2025-01-23 21:07:15.5|Debug|Api|[GET] /api/v1/config/host: 200.OK (69 ms)
+2025-01-23 21:07:15.6|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: SignalR was successfully authenticated.
+2025-01-23 21:07:15.6|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:07:15.6|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:07:15.6|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:07:15.6|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:07:15.6|Debug|Api|[GET] /api/v1/indexerStatus: 200.OK (2 ms)
+2025-01-23 21:07:15.6|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-01-23 21:07:15.6|Debug|Api|[GET] /api/v1/config/host: 200.OK (14 ms)
+2025-01-23 21:07:15.6|Debug|Api|[GET] /api/v1/indexer: 200.OK (13 ms)
+2025-01-23 21:07:15.6|Debug|Api|[GET] /api/v1/health: 200.OK (16 ms)
+2025-01-23 21:07:15.6|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: SignalR was successfully authenticated.
+2025-01-23 21:07:20.1|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:07:20.1|Debug|Api|[GET] /api/v1/health: 200.OK (5 ms)
+2025-01-23 21:07:42.0|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:07:42.1|Debug|Api|[PUT] /api/v1/config/host: 202.Accepted (120 ms)
+2025-01-23 21:07:42.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:07:42.2|Debug|Api|[GET] /api/v1/system/status: 200.OK (2 ms)
+2025-01-23 21:07:43.5|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:07:44.3|Debug|Api|[GET] /api/v1/indexer/schema: 200.OK (808 ms)
+2025-01-23 21:07:47.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:07:47.2|Debug|Api|[GET] /api/v1/health: 200.OK (3 ms)
+2025-01-23 21:07:51.8|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:07:51.8|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:07:51.8|Debug|Api|[GET] /api/v1/downloadclient: 200.OK (13 ms)
+2025-01-23 21:07:51.9|Debug|Api|[POST] /api/v1/indexer/action/getUrls: 200.OK (152 ms)
+2025-01-23 21:08:12.8|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:08:12.9|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/Movies/time/desc/1/
+2025-01-23 21:08:12.9|Debug|Cardigann|Downloading Feed https://1337x.to/cat/Movies/time/desc/1/
+2025-01-23 21:08:13.1|Warn|ProwlarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to access 1337x.to, blocked by CloudFlare Protection.
+2025-01-23 21:08:13.1|Debug|Api|[POST] /api/v1/indexer/test: 400.BadRequest (322 ms)
+2025-01-23 21:08:14.5|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:08:14.5|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/Movies/time/desc/1/
+2025-01-23 21:08:14.5|Debug|Cardigann|Downloading Feed https://1337x.to/cat/Movies/time/desc/1/
+2025-01-23 21:08:14.9|Warn|ProwlarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to access 1337x.to, blocked by CloudFlare Protection.
+2025-01-23 21:08:14.9|Debug|Api|[POST] /api/v1/indexer/test?forceTest=true: 400.BadRequest (435 ms)
+2025-01-23 21:08:20.9|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:08:20.9|Debug|Api|[POST] /api/v1/indexer/action/getUrls: 200.OK (5 ms)
+2025-01-23 21:08:23.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:08:23.4|Debug|Cardigann|Adding request for 1337x: https://1337x.proxyninja.org/cat/Movies/time/desc/1/
+2025-01-23 21:08:23.4|Debug|Cardigann|Downloading Feed https://1337x.proxyninja.org/cat/Movies/time/desc/1/
+2025-01-23 21:08:23.6|Warn|ProwlarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to access 1337x.proxyninja.org, blocked by CloudFlare Protection.
+2025-01-23 21:08:23.6|Debug|Api|[POST] /api/v1/indexer/test: 400.BadRequest (163 ms)
+2025-01-23 21:08:26.3|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:08:26.3|Debug|Api|[POST] /api/v1/indexer/action/getUrls: 200.OK (2 ms)
+2025-01-23 21:08:27.9|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:08:27.9|Debug|Cardigann|Adding request for 1337x: https://1337x.unblockninja.com/cat/Movies/time/desc/1/
+2025-01-23 21:08:27.9|Debug|Cardigann|Downloading Feed https://1337x.unblockninja.com/cat/Movies/time/desc/1/
+2025-01-23 21:08:28.0|Warn|ProwlarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to access 1337x.unblockninja.com, blocked by CloudFlare Protection.
+2025-01-23 21:08:28.0|Debug|Api|[POST] /api/v1/indexer/test: 400.BadRequest (155 ms)
+2025-01-23 21:09:09.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:09:09.2|Debug|Cardigann|Adding request for 1337x: https://1337x.unblockninja.com/cat/Movies/time/desc/1/
+2025-01-23 21:09:09.2|Debug|Cardigann|Downloading Feed https://1337x.unblockninja.com/cat/Movies/time/desc/1/
+2025-01-23 21:09:09.3|Warn|ProwlarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to access 1337x.unblockninja.com, blocked by CloudFlare Protection.
+2025-01-23 21:09:09.3|Debug|Api|[POST] /api/v1/indexer/test?forceTest=true: 400.BadRequest (53 ms)
+2025-01-23 21:09:14.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:09:14.7|Debug|Api|[POST] /api/v1/indexer/action/getUrls: 200.OK (5 ms)
+2025-01-23 21:09:16.8|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:09:16.8|Debug|Cardigann|Adding request for 1337x: https://1337x.torrentbay.st/cat/Movies/time/desc/1/
+2025-01-23 21:09:16.8|Debug|Cardigann|Downloading Feed https://1337x.torrentbay.st/cat/Movies/time/desc/1/
+2025-01-23 21:09:16.9|Warn|ProwlarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to access 1337x.torrentbay.st, blocked by CloudFlare Protection.
+2025-01-23 21:09:16.9|Debug|Api|[POST] /api/v1/indexer/test: 400.BadRequest (165 ms)
+2025-01-23 21:09:33.3|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:09:33.3|Debug|Api|[POST] /api/v1/indexer/action/getUrls: 200.OK (4 ms)
+2025-01-23 21:09:35.1|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:09:35.1|Debug|Cardigann|Adding request for 1337x: https://1337x.torrentsbay.org/cat/Movies/time/desc/1/
+2025-01-23 21:09:35.1|Debug|Cardigann|Downloading Feed https://1337x.torrentsbay.org/cat/Movies/time/desc/1/
+2025-01-23 21:09:35.2|Warn|ProwlarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to access 1337x.torrentsbay.org, blocked by CloudFlare Protection.
+2025-01-23 21:09:35.2|Debug|Api|[POST] /api/v1/indexer/test: 400.BadRequest (173 ms)
+2025-01-23 21:09:36.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:09:36.4|Debug|Api|[POST] /api/v1/indexer/action/getUrls: 200.OK (5 ms)
+2025-01-23 21:09:39.1|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:09:39.1|Debug|Cardigann|Adding request for 1337x: https://x1337x.eu/cat/Movies/time/desc/1/
+2025-01-23 21:09:39.1|Debug|Cardigann|Downloading Feed https://x1337x.eu/cat/Movies/time/desc/1/
+2025-01-23 21:09:39.2|Warn|ProwlarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to access x1337x.eu, blocked by CloudFlare Protection.
+2025-01-23 21:09:39.2|Debug|Api|[POST] /api/v1/indexer/test: 400.BadRequest (147 ms)
+2025-01-23 21:09:40.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:09:40.4|Debug|Api|[POST] /api/v1/indexer/action/getUrls: 200.OK (6 ms)
+2025-01-23 21:09:42.0|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:09:42.0|Debug|Cardigann|Adding request for 1337x: https://x1337x.cc/cat/Movies/time/desc/1/
+2025-01-23 21:09:42.0|Debug|Cardigann|Downloading Feed https://x1337x.cc/cat/Movies/time/desc/1/
+2025-01-23 21:09:42.1|Warn|ProwlarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to access x1337x.cc, blocked by CloudFlare Protection.
+2025-01-23 21:09:42.1|Debug|Api|[POST] /api/v1/indexer/test: 400.BadRequest (152 ms)
+2025-01-23 21:09:49.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:09:49.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:09:49.2|Debug|Api|[GET] /api/v1/downloadclient: 200.OK (1 ms)
+2025-01-23 21:09:49.2|Debug|Api|[POST] /api/v1/indexer/action/getUrls: 200.OK (9 ms)
+2025-01-23 21:10:08.6|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:10:08.6|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/precompiled/data_top100_recent.json
+2025-01-23 21:10:08.6|Debug|Cardigann|Downloading Feed https://apibay.org/precompiled/data_top100_recent.json
+2025-01-23 21:10:08.8|Debug|Api|[POST] /api/v1/indexer/test: 200.OK (227 ms)
+2025-01-23 21:10:12.5|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:10:12.5|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/precompiled/data_top100_recent.json
+2025-01-23 21:10:12.5|Debug|Cardigann|Downloading Feed https://apibay.org/precompiled/data_top100_recent.json
+2025-01-23 21:10:12.6|Debug|Api|[POST] /api/v1/indexer: 201.Created (95 ms)
+2025-01-23 21:10:17.6|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:10:17.6|Debug|Api|[GET] /api/v1/health: 200.OK (3 ms)
+2025-01-23 21:10:54.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:10:54.4|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/precompiled/data_top100_recent.json
+2025-01-23 21:10:54.4|Debug|Cardigann|Downloading Feed https://apibay.org/precompiled/data_top100_recent.json
+2025-01-23 21:10:54.4|Debug|Api|[POST] /api/v1/indexer/testall: 200.OK (80 ms)
+2025-01-23 21:12:10.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:12:10.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:12:10.4|Debug|Api|[GET] /api/v1/health: 200.OK (5 ms)
+2025-01-23 21:12:10.4|Info|Prowlarr.Http.Authentication.BasicAuthenticationHandler|Basic was not authenticated. Failure message: Authorization header missing.
+2025-01-23 21:12:10.4|Info|Prowlarr.Http.Authentication.BasicAuthenticationHandler|Basic was not authenticated. Failure message: Authorization header missing.
+2025-01-23 21:12:10.4|Info|Prowlarr.Http.Authentication.BasicAuthenticationHandler|Basic was not authenticated. Failure message: Authorization header missing.
+2025-01-23 21:12:10.4|Info|Prowlarr.Http.Authentication.BasicAuthenticationHandler|Basic was not authenticated. Failure message: Authorization header missing.
+2025-01-23 21:12:10.4|Debug|Api|[GET] /api/v1/system/status: 200.OK (9 ms)
+2025-01-23 21:12:10.4|Info|Prowlarr.Http.Authentication.BasicAuthenticationHandler|Basic was not authenticated. Failure message: Authorization header missing.
+2025-01-23 21:12:10.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was not authenticated.
+2025-01-23 21:12:10.4|Info|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was challenged.
+2025-01-23 21:12:10.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was not authenticated.
+2025-01-23 21:12:10.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was not authenticated.
+2025-01-23 21:12:10.4|Info|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was challenged.
+2025-01-23 21:12:10.4|Info|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was challenged.
+2025-01-23 21:12:10.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was not authenticated.
+2025-01-23 21:12:10.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was not authenticated.
+2025-01-23 21:12:10.4|Info|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was challenged.
+2025-01-23 21:12:10.4|Info|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was challenged.
+2025-01-23 21:12:10.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was not authenticated.
+2025-01-23 21:12:10.4|Info|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was challenged.
+2025-01-23 21:12:10.4|Info|Prowlarr.Http.Authentication.BasicAuthenticationHandler|Basic was not authenticated. Failure message: Authorization header missing.
+2025-01-23 21:12:10.5|Info|Prowlarr.Http.Authentication.BasicAuthenticationHandler|Basic was not authenticated. Failure message: Authorization header missing.
+2025-01-23 21:12:10.5|Info|Prowlarr.Http.Authentication.BasicAuthenticationHandler|Basic was not authenticated. Failure message: Authorization header missing.
+2025-01-23 21:12:10.5|Info|Prowlarr.Http.Authentication.BasicAuthenticationHandler|Basic was not authenticated. Failure message: Authorization header missing.
+2025-01-23 21:12:13.6|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:12:13.6|Debug|Api|[GET] /api/v1/command: 200.OK (27 ms)
+2025-01-23 21:12:17.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:12:17.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:12:17.7|Debug|Api|[GET] /api/v1/appprofile: 200.OK (4 ms)
+2025-01-23 21:12:17.7|Debug|Api|[GET] /api/v1/applications: 200.OK (14 ms)
+2025-01-23 21:12:20.3|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:12:20.3|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:12:20.3|Debug|Api|[GET] /api/v1/health: 200.OK (1 ms)
+2025-01-23 21:12:20.3|Debug|Api|[GET] /api/v1/system/status: 200.OK (1 ms)
+2025-01-23 21:12:22.6|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:12:22.6|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:12:22.6|Debug|Api|[GET] /api/v1/command: 200.OK (7 ms)
+2025-01-23 21:12:22.6|Debug|Api|[GET] /api/v1/system/task: 200.OK (12 ms)
+2025-01-23 21:12:23.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:12:23.4|Debug|Api|[GET] /api/v1/system/backup: 200.OK (12 ms)
+2025-01-23 21:12:24.0|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:12:24.0|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:12:24.0|Debug|Api|[GET] /api/v1/config/host: 200.OK (3 ms)
+2025-01-23 21:12:24.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:12:24.4|Debug|Api|[GET] /api/v1/update: 200.OK (430 ms)
+2025-01-23 21:12:24.4|Debug|Api|[GET] /api/v1/log?page=1&pageSize=50&sortDirection=descending&sortKey=time: 200.OK (31 ms)
+2025-01-23 21:12:25.0|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:12:25.0|Debug|Api|[GET] /api/v1/log/file: 200.OK (8 ms)
+2025-01-23 21:15:15.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:15:15.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:15:15.7|Debug|Api|[GET] /api/v1/indexerStatus: 200.OK (2 ms)
+2025-01-23 21:15:15.7|Debug|Api|[GET] /api/v1/indexer: 200.OK (4 ms)
+2025-01-23 21:15:20.1|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:15:20.1|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:15:20.1|Debug|Api|[GET] /api/v1/downloadclient: 200.OK (5 ms)
+2025-01-23 21:15:20.1|Debug|Api|[POST] /api/v1/indexer/action/getUrls: 200.OK (11 ms)
+2025-01-23 21:17:43.6|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:17:43.6|Debug|Api|[GET] /api/v1/command: 200.OK (1 ms)
+2025-01-23 21:18:54.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:18:54.2|Debug|Api|[GET] /api/v1/indexerProxy: 200.OK (8 ms)
+2025-01-23 21:18:55.0|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:18:55.0|Debug|Api|[GET] /api/v1/indexerProxy/schema: 200.OK (16 ms)
+2025-01-23 21:19:07.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:19:07.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:19:07.7|Debug|Api|[GET] /api/v1/appprofile: 200.OK (2 ms)
+2025-01-23 21:19:07.7|Debug|Api|[GET] /api/v1/applications: 200.OK (4 ms)
+2025-01-23 21:19:09.0|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:19:09.0|Debug|Api|[GET] /api/v1/applications/schema: 200.OK (29 ms)
+2025-01-23 21:19:45.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:19:45.2|Warn|ProwlarrErrorPipeline|Invalid request Validation failed: 
+ -- ApiKey: 'Api Key' must not be empty.
+2025-01-23 21:19:45.2|Debug|Api|[POST] /api/v1/applications/test: 400.BadRequest (23 ms)
+2025-01-23 21:20:04.8|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:20:04.9|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [POST] http://192.168.31.241:7878/api/v3/indexer/test: 400.BadRequest (243 bytes)
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Unable to connect to indexer, please check your DNS settings and ensure IPv6 is working or disabled. Connection refused (localhost:9696)",
+    "severity": "error"
+  }
+]
+2025-01-23 21:20:04.9|Warn|Radarr|Prowlarr URL is invalid
+
+[v1.29.2.4915] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://192.168.31.241:7878/api/v3/indexer/test]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Post(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 423
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.TestConnection(RadarrIndexer indexer, RadarrSettings settings) in ./Prowlarr.Core/Applications/Radarr/RadarrV3Proxy.cs:line 132
+   at NzbDrone.Core.Applications.Radarr.Radarr.Test() in ./Prowlarr.Core/Applications/Radarr/Radarr.cs:line 52
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Unable to connect to indexer, please check your DNS settings and ensure IPv6 is working or disabled. Connection refused (localhost:9696)",
+    "severity": "error"
+  }
+]
+
+
+2025-01-23 21:20:04.9|Warn|ProwlarrErrorPipeline|Invalid request Validation failed: 
+ -- ProwlarrUrl: Prowlarr URL is invalid, Radarr cannot connect to Prowlarr
+2025-01-23 21:20:04.9|Debug|Api|[POST] /api/v1/applications/test: 400.BadRequest (181 ms)
+2025-01-23 21:20:14.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:20:14.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:20:14.3|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:20:14.3|Debug|Api|[POST] /api/v1/applications/test: 200.OK (111 ms)
+2025-01-23 21:20:16.3|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:20:16.3|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:20:16.4|Debug|Api|[POST] /api/v1/applications: 201.Created (40 ms)
+2025-01-23 21:20:16.4|Debug|ApplicationService|No tags set to application Radarr.
+2025-01-23 21:20:16.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:20:18.3|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:20:18.4|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-01-23 21:20:18.4|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/precompiled/data_top100_recent.json
+2025-01-23 21:20:18.4|Debug|Cardigann|Downloading Feed https://apibay.org/precompiled/data_top100_recent.json
+2025-01-23 21:20:18.6|Debug|ReleaseSearchService|Total of 3 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045] from 1 indexer(s)
+2025-01-23 21:21:10.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:21:10.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:21:10.2|Debug|Api|[GET] /api/v1/indexerStatus: 200.OK (1 ms)
+2025-01-23 21:21:10.2|Debug|Api|[GET] /api/v1/indexer: 200.OK (4 ms)
+2025-01-23 21:21:17.6|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:21:18.0|Debug|Api|[GET] /api/v1/indexer/schema: 200.OK (364 ms)
+2025-01-23 21:23:13.6|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:23:13.6|Debug|Api|[GET] /api/v1/command: 200.OK (1 ms)
+2025-01-23 21:23:14.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:23:14.2|Debug|Api|[GET] /api/v1/health: 200.OK (3 ms)
+2025-01-23 21:28:43.6|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:28:43.6|Debug|Api|[GET] /api/v1/command: 200.OK (1 ms)
+2025-01-23 21:32:49.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:32:49.4|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-01-23 21:32:49.4|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/precompiled/data_top100_recent.json
+2025-01-23 21:32:49.4|Debug|Cardigann|Downloading Feed https://apibay.org/precompiled/data_top100_recent.json
+2025-01-23 21:32:49.6|Debug|ReleaseSearchService|Total of 3 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045] from 1 indexer(s)
+2025-01-23 21:37:01.0|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:37:01.0|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [Harry Potter and the Deathly Hallows Part 2 2011], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-01-23 21:37:01.0|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/q.php?q=harry.potter.and.the.deathly.hallows.part.2.2011&cat=200%2C201%2C202%2C204%2C207%2C209%2C210%2C211%2C299
+2025-01-23 21:37:01.0|Debug|Cardigann|Downloading Feed https://apibay.org/q.php?q=harry.potter.and.the.deathly.hallows.part.2.2011&cat=200%2C201%2C202%2C204%2C207%2C209%2C210%2C211%2C299
+2025-01-23 21:37:01.8|Debug|ReleaseSearchService|Total of 98 reports were found for Term: [Harry Potter and the Deathly Hallows Part 2 2011], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045] from 1 indexer(s)
+2025-01-23 21:37:03.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-23 21:38:18.8|Info|Microsoft.Hosting.Lifetime|Application is shutting down...
+2025-01-23 21:38:19.1|Info|ConsoleApp|Exiting main.
+2025-01-24 11:09:05.0|Debug|ProcessProvider|Found 0 processes with the name: Prowlarr.Console
+2025-01-24 11:09:05.0|Debug|ProcessProvider|Found 1 processes with the name: Prowlarr
+2025-01-24 11:09:05.0|Debug|ProcessProvider| - [143] Prowlarr
+2025-01-24 11:09:05.1|Info|MigrationController|*** Migrating data source=/config/prowlarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-01-24 11:09:05.2|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-01-24 11:09:05.2|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-01-24 11:09:05.3|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-01-24 11:09:05.3|Info|DatabaseEngineVersionCheck|SQLite 3.47.1
+2025-01-24 11:09:05.3|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0688591s
+2025-01-24 11:09:05.3|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-01-24 11:09:05.3|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0726664s
+2025-01-24 11:09:05.4|Debug|MigrationController|Took: 00:00:00.2940509
+2025-01-24 11:09:05.4|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-01-24 11:09:05.4|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-01-24 11:09:05.4|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-01-24 11:09:05.4|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-01-24 11:09:05.4|Info|DatabaseEngineVersionCheck|SQLite 3.47.1
+2025-01-24 11:09:05.4|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0035968s
+2025-01-24 11:09:05.4|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-01-24 11:09:05.4|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0039841s
+2025-01-24 11:09:05.4|Debug|MigrationController|Took: 00:00:00.0190429
+2025-01-24 11:09:05.8|Info|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:9696
+2025-01-24 11:09:05.9|Debug|NotificationFactory|Initializing Providers. Count 20
+2025-01-24 11:09:06.0|Info|CommandExecutor|Starting 3 threads for tasks.
+2025-01-24 11:09:06.0|Debug|HttpClient|Downloading [https://indexers.prowlarr.com/master/11/package.zip] to [/config/Definitions/indexers.zip]
+2025-01-24 11:09:06.1|Info|ManagedHttpDispatcher|IPv4 is available: True, IPv6 will be disabled
+2025-01-24 11:09:06.5|Debug|HttpClient|Downloading Completed. took 0s
+2025-01-24 11:09:06.5|Debug|IndexerDefinitionUpdateService|Updated indexer definitions
+2025-01-24 11:09:06.5|Debug|IndexerFactory|Initializing Providers. Count 67
+2025-01-24 11:09:06.6|Debug|IndexerProxyFactory|Initializing Providers. Count 4
+2025-01-24 11:09:06.6|Debug|DownloadClientFactory|Initializing Providers. Count 18
+2025-01-24 11:09:06.6|Debug|ApplicationFactory|Initializing Providers. Count 7
+2025-01-24 11:09:06.6|Info|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2025-01-24 11:09:06.6|Info|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2025-01-24 11:09:06.6|Info|Microsoft.Hosting.Lifetime|Content root path: /app/bin
+2025-01-24 11:09:26.5|Info|Prowlarr.Http.Authentication.BasicAuthenticationHandler|Basic was not authenticated. Failure message: Authorization header missing.
+2025-01-24 11:09:26.7|Info|Prowlarr.Http.Authentication.BasicAuthenticationHandler|Basic was not authenticated. Failure message: Authorization header missing.
+2025-01-24 11:09:27.0|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:09:27.0|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:09:27.0|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:09:27.0|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:09:27.0|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:09:27.0|Debug|Api|[GET] /api/v1/indexer/categories: 200.OK (24 ms)
+2025-01-24 11:09:27.0|Debug|Api|[GET] /api/v1/customFilter: 200.OK (38 ms)
+2025-01-24 11:09:27.0|Debug|Api|[GET] /api/v1/indexerStatus: 200.OK (40 ms)
+2025-01-24 11:09:27.0|Debug|Api|[GET] /api/v1/appprofile: 200.OK (41 ms)
+2025-01-24 11:09:27.0|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:09:27.0|Debug|Api|[GET] /api/v1/tag: 200.OK (12 ms)
+2025-01-24 11:09:27.0|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:09:27.0|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:09:27.0|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:09:27.1|Debug|Api|[GET] /api/v1/config/ui: 200.OK (32 ms)
+2025-01-24 11:09:27.1|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:09:27.1|Debug|Api|[GET] /api/v1/localization: 200.OK (5 ms)
+2025-01-24 11:09:27.1|Debug|Api|[GET] /api/v1/system/status: 200.OK (54 ms)
+2025-01-24 11:09:27.1|Debug|Api|[GET] /api/v1/config/host: 200.OK (62 ms)
+2025-01-24 11:09:27.2|Debug|Api|[GET] /api/v1/indexer: 200.OK (181 ms)
+2025-01-24 11:09:27.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: SignalR was successfully authenticated.
+2025-01-24 11:09:27.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:09:27.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:09:27.2|Debug|Api|[GET] /api/v1/indexerStatus: 200.OK (2 ms)
+2025-01-24 11:09:27.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:09:27.2|Debug|Api|[GET] /api/v1/indexer: 200.OK (9 ms)
+2025-01-24 11:09:27.2|Debug|Api|[GET] /api/v1/health: 200.OK (12 ms)
+2025-01-24 11:09:27.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: SignalR was successfully authenticated.
+2025-01-24 11:09:27.8|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was not authenticated.
+2025-01-24 11:09:27.8|Info|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was challenged.
+2025-01-24 11:09:36.1|Debug|InstallUpdateService|Checking for updates
+2025-01-24 11:09:36.1|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:09:36.1|Debug|Api|[GET] /api/v1/command: 200.OK (43 ms)
+2025-01-24 11:09:36.2|Debug|ApplicationService|No tags set to application Radarr.
+2025-01-24 11:09:36.2|Debug|Radarr|Updating indexer The Pirate Bay [1]
+2025-01-24 11:09:36.2|Debug|InstallUpdateService|No update available
+2025-01-24 11:09:36.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:09:36.2|Debug|Api|[GET] /api/v1/command: 200.OK (2 ms)
+2025-01-24 11:09:36.3|Debug|Radarr|Remote indexer The Pirate Bay (Prowlarr) [1] found
+2025-01-24 11:09:36.3|Debug|ApplicationService|No tags set to application Radarr.
+2025-01-24 11:09:36.3|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:09:36.3|Debug|Api|[GET] /api/v1/command: 200.OK (1 ms)
+2025-01-24 11:09:36.3|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:09:36.3|Debug|Api|[GET] /api/v1/health: 200.OK (1 ms)
+2025-01-24 11:09:36.3|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:09:36.3|Debug|Api|[GET] /api/v1/command: 200.OK (1 ms)
+2025-01-24 11:09:43.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:09:43.8|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:09:43.8|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-01-24 11:09:43.8|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/precompiled/data_top100_recent.json
+2025-01-24 11:09:43.8|Debug|Cardigann|Downloading Feed https://apibay.org/precompiled/data_top100_recent.json
+2025-01-24 11:09:44.1|Debug|ReleaseSearchService|Total of 4 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045] from 1 indexer(s)
+2025-01-24 11:10:14.8|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:10:14.8|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [Harry Potter and the Philosophers Stone 2001], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-01-24 11:10:14.8|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/q.php?q=harry.potter.and.the.philosophers.stone.2001&cat=200%2C201%2C202%2C204%2C207%2C209%2C210%2C211%2C299
+2025-01-24 11:10:14.8|Debug|Cardigann|Downloading Feed https://apibay.org/q.php?q=harry.potter.and.the.philosophers.stone.2001&cat=200%2C201%2C202%2C204%2C207%2C209%2C210%2C211%2C299
+2025-01-24 11:10:15.5|Debug|ReleaseSearchService|Total of 15 reports were found for Term: [Harry Potter and the Philosophers Stone 2001], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045] from 1 indexer(s)
+2025-01-24 11:10:16.8|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:10:41.8|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:10:42.5|Debug|Api|[GET] /api/v1/indexer/schema: 200.OK (711 ms)
+2025-01-24 11:10:49.8|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:10:49.8|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:10:49.8|Debug|Api|[GET] /api/v1/downloadclient: 200.OK (12 ms)
+2025-01-24 11:10:49.9|Debug|Api|[POST] /api/v1/indexer/action/getUrls: 200.OK (79 ms)
+2025-01-24 11:10:51.5|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:10:51.5|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/Movies/time/desc/1/
+2025-01-24 11:10:51.5|Debug|Cardigann|Downloading Feed https://1337x.to/cat/Movies/time/desc/1/
+2025-01-24 11:10:51.6|Warn|ProwlarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to access 1337x.to, blocked by CloudFlare Protection.
+2025-01-24 11:10:51.7|Debug|Api|[POST] /api/v1/indexer/test: 400.BadRequest (197 ms)
+2025-01-24 11:11:16.9|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:11:16.9|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:11:16.9|Debug|Api|[GET] /api/v1/downloadclient: 200.OK (12 ms)
+2025-01-24 11:11:16.9|Debug|Api|[POST] /api/v1/indexer/action/getUrls: 200.OK (18 ms)
+2025-01-24 11:11:19.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:11:19.2|Debug|Cardigann|Adding request for EZTV: https://eztvx.to/home
+2025-01-24 11:11:19.2|Debug|Cardigann|Downloading Feed https://eztvx.to/home
+2025-01-24 11:11:20.3|Debug|Api|[POST] /api/v1/indexer/test: 200.OK (1082 ms)
+2025-01-24 11:11:21.3|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:11:21.3|Debug|Cardigann|Adding request for EZTV: https://eztvx.to/home
+2025-01-24 11:11:21.3|Debug|Cardigann|Downloading Feed https://eztvx.to/home
+2025-01-24 11:11:21.8|Debug|ApplicationService|No tags set to application Radarr.
+2025-01-24 11:11:21.8|Debug|Api|[POST] /api/v1/indexer: 201.Created (492 ms)
+2025-01-24 11:11:26.8|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:11:26.8|Debug|Api|[GET] /api/v1/health: 200.OK (4 ms)
+2025-01-24 11:11:38.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:11:38.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:11:38.7|Debug|Api|[GET] /api/v1/downloadclient: 200.OK (4 ms)
+2025-01-24 11:11:38.7|Debug|Api|[POST] /api/v1/indexer/action/getUrls: 200.OK (7 ms)
+2025-01-24 11:11:39.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:11:39.7|Debug|Cardigann|Adding request for Torrentz2nz: https://torrentz2.nz/search
+2025-01-24 11:11:39.7|Debug|Cardigann|Downloading Feed https://torrentz2.nz/search
+2025-01-24 11:11:40.0|Debug|Api|[POST] /api/v1/indexer/test: 200.OK (309 ms)
+2025-01-24 11:11:40.6|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:11:40.7|Debug|Cardigann|Adding request for Torrentz2nz: https://torrentz2.nz/search
+2025-01-24 11:11:40.7|Debug|Cardigann|Downloading Feed https://torrentz2.nz/search
+2025-01-24 11:11:41.9|Debug|ApplicationService|No tags set to application Radarr.
+2025-01-24 11:11:41.9|Debug|Api|[POST] /api/v1/indexer: 201.Created (1209 ms)
+2025-01-24 11:11:41.9|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:11:41.9|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:11:41.9|Info|ReleaseSearchService|Searching indexer(s): [Torrentz2nz] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-01-24 11:11:41.9|Debug|Cardigann|Adding request for Torrentz2nz: https://torrentz2.nz/search
+2025-01-24 11:11:41.9|Debug|Cardigann|Downloading Feed https://torrentz2.nz/search
+2025-01-24 11:11:43.9|Debug|ReleaseSearchService|Total of 0 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [2000] from 1 indexer(s)
+2025-01-24 11:11:43.9|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [POST] http://192.168.31.241:7878/api/v3/indexer: 400.BadRequest (274 bytes)
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+2025-01-24 11:11:43.9|Warn|RadarrV3Proxy|No Results in configured categories. See FAQ Entry: Prowlarr will not sync X Indexer to App
+
+[v1.29.2.4915] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://192.168.31.241:7878/api/v3/indexer]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.Execute[TResource](HttpRequest request) in ./Prowlarr.Core/Applications/Radarr/RadarrV3Proxy.cs:line 228
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./Prowlarr.Core/Applications/Radarr/RadarrV3Proxy.cs:line 163
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2025-01-24 11:11:44.0|Debug|RadarrV3Proxy|Retrying to add indexer forcefully
+2025-01-24 11:11:44.0|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:11:44.0|Info|ReleaseSearchService|Searching indexer(s): [Torrentz2nz] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-01-24 11:11:44.0|Debug|Cardigann|Adding request for Torrentz2nz: https://torrentz2.nz/search
+2025-01-24 11:11:44.0|Debug|Cardigann|Downloading Feed https://torrentz2.nz/search
+2025-01-24 11:11:45.8|Debug|ReleaseSearchService|Total of 0 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [2000] from 1 indexer(s)
+2025-01-24 11:11:45.9|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [POST] http://192.168.31.241:7878/api/v3/indexer?forceSave=true: 400.BadRequest (274 bytes)
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+2025-01-24 11:11:45.9|Warn|RadarrV3Proxy|No Results in configured categories. See FAQ Entry: Prowlarr will not sync X Indexer to App
+
+[v1.29.2.4915] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://192.168.31.241:7878/api/v3/indexer?forceSave=true]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.Execute[TResource](HttpRequest request) in ./Prowlarr.Core/Applications/Radarr/RadarrV3Proxy.cs:line 228
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./Prowlarr.Core/Applications/Radarr/RadarrV3Proxy.cs:line 163
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2025-01-24 11:11:45.9|Warn|ApplicationService|NzbDrone.Core.Applications.ApplicationService HTTP request failed: [400:BadRequest] [POST] at [http://192.168.31.241:7878/api/v3/indexer?forceSave=true]
+
+[v1.29.2.4915] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://192.168.31.241:7878/api/v3/indexer?forceSave=true]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.Execute[TResource](HttpRequest request) in ./Prowlarr.Core/Applications/Radarr/RadarrV3Proxy.cs:line 228
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./Prowlarr.Core/Applications/Radarr/RadarrV3Proxy.cs:line 163
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.AddIndexer(RadarrIndexer indexer, RadarrSettings settings) in ./Prowlarr.Core/Applications/Radarr/RadarrV3Proxy.cs:line 100
+   at NzbDrone.Core.Applications.Radarr.Radarr.AddIndexer(IndexerDefinition indexer) in ./Prowlarr.Core/Applications/Radarr/Radarr.cs:line 135
+   at NzbDrone.Core.Applications.ApplicationService.<>c__DisplayClass8_0.<HandleAsync>b__0(IApplication a) in ./Prowlarr.Core/Applications/ApplicationService.cs:line 76
+   at NzbDrone.Core.Applications.ApplicationService.ExecuteAction(Action`1 applicationAction, IApplication application) in ./Prowlarr.Core/Applications/ApplicationService.cs:line 239
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2025-01-24 11:11:46.9|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:11:46.9|Debug|Api|[GET] /api/v1/health: 200.OK (1 ms)
+2025-01-24 11:12:01.9|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:12:01.9|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:12:01.9|Debug|Api|[GET] /api/v1/health: 200.OK (7 ms)
+2025-01-24 11:12:01.9|Debug|Api|[GET] /api/v1/system/status: 200.OK (9 ms)
+2025-01-24 11:12:03.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:12:03.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:12:03.7|Debug|Api|[GET] /api/v1/appprofile: 200.OK (3 ms)
+2025-01-24 11:12:03.7|Debug|Api|[GET] /api/v1/applications: 200.OK (49 ms)
+2025-01-24 11:12:09.8|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:12:09.8|Debug|Api|[GET] /api/v1/applications/schema: 200.OK (21 ms)
+2025-01-24 11:12:12.0|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:12:12.0|Debug|Api|[GET] /api/v1/appprofile/schema: 200.OK (4 ms)
+2025-01-24 11:12:15.0|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:12:15.0|Debug|Api|[POST] /api/v1/command: 201.Created (18 ms)
+2025-01-24 11:12:15.0|Debug|ApplicationService|No tags set to application Radarr.
+2025-01-24 11:12:15.0|Debug|ApplicationService|No tags set to application Radarr.
+2025-01-24 11:12:15.0|Debug|Radarr|Updating indexer The Pirate Bay [1]
+2025-01-24 11:12:15.0|Debug|Radarr|Remote indexer The Pirate Bay (Prowlarr) [1] found
+2025-01-24 11:12:15.1|Debug|ApplicationService|No tags set to application Radarr.
+2025-01-24 11:12:15.1|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:12:15.1|Info|ReleaseSearchService|Searching indexer(s): [Torrentz2nz] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-01-24 11:12:15.1|Debug|Cardigann|Adding request for Torrentz2nz: https://torrentz2.nz/search
+2025-01-24 11:12:15.1|Debug|Cardigann|Downloading Feed https://torrentz2.nz/search
+2025-01-24 11:12:15.3|Debug|ReleaseSearchService|Total of 0 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [2000] from 1 indexer(s)
+2025-01-24 11:12:15.3|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [POST] http://192.168.31.241:7878/api/v3/indexer: 400.BadRequest (274 bytes)
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+2025-01-24 11:12:15.3|Warn|RadarrV3Proxy|No Results in configured categories. See FAQ Entry: Prowlarr will not sync X Indexer to App
+
+[v1.29.2.4915] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://192.168.31.241:7878/api/v3/indexer]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.Execute[TResource](HttpRequest request) in ./Prowlarr.Core/Applications/Radarr/RadarrV3Proxy.cs:line 228
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./Prowlarr.Core/Applications/Radarr/RadarrV3Proxy.cs:line 163
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2025-01-24 11:12:15.3|Debug|RadarrV3Proxy|Retrying to add indexer forcefully
+2025-01-24 11:12:17.1|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:12:17.1|Info|ReleaseSearchService|Searching indexer(s): [Torrentz2nz] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-01-24 11:12:17.1|Debug|Cardigann|Adding request for Torrentz2nz: https://torrentz2.nz/search
+2025-01-24 11:12:17.1|Debug|Cardigann|Downloading Feed https://torrentz2.nz/search
+2025-01-24 11:12:17.3|Debug|ReleaseSearchService|Total of 0 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [2000] from 1 indexer(s)
+2025-01-24 11:12:17.3|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [POST] http://192.168.31.241:7878/api/v3/indexer?forceSave=true: 400.BadRequest (274 bytes)
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+2025-01-24 11:12:17.3|Warn|RadarrV3Proxy|No Results in configured categories. See FAQ Entry: Prowlarr will not sync X Indexer to App
+
+[v1.29.2.4915] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://192.168.31.241:7878/api/v3/indexer?forceSave=true]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.Execute[TResource](HttpRequest request) in ./Prowlarr.Core/Applications/Radarr/RadarrV3Proxy.cs:line 228
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./Prowlarr.Core/Applications/Radarr/RadarrV3Proxy.cs:line 163
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2025-01-24 11:12:17.3|Warn|ApplicationService|NzbDrone.Core.Applications.ApplicationService HTTP request failed: [400:BadRequest] [POST] at [http://192.168.31.241:7878/api/v3/indexer?forceSave=true]
+
+[v1.29.2.4915] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://192.168.31.241:7878/api/v3/indexer?forceSave=true]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.Execute[TResource](HttpRequest request) in ./Prowlarr.Core/Applications/Radarr/RadarrV3Proxy.cs:line 228
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./Prowlarr.Core/Applications/Radarr/RadarrV3Proxy.cs:line 163
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.AddIndexer(RadarrIndexer indexer, RadarrSettings settings) in ./Prowlarr.Core/Applications/Radarr/RadarrV3Proxy.cs:line 100
+   at NzbDrone.Core.Applications.Radarr.Radarr.AddIndexer(IndexerDefinition indexer) in ./Prowlarr.Core/Applications/Radarr/Radarr.cs:line 135
+   at NzbDrone.Core.Applications.ApplicationService.<>c__DisplayClass14_2.<SyncIndexers>b__5(IApplication a) in ./Prowlarr.Core/Applications/ApplicationService.cs:line 177
+   at NzbDrone.Core.Applications.ApplicationService.ExecuteAction(Action`1 applicationAction, IApplication application) in ./Prowlarr.Core/Applications/ApplicationService.cs:line 239
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2025-01-24 11:12:17.3|Debug|ApplicationService|No tags set to application Radarr.
+2025-01-24 11:12:17.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:12:17.4|Debug|Api|[GET] /api/v1/command: 200.OK (1 ms)
+2025-01-24 11:12:20.1|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:12:20.1|Debug|Api|[GET] /api/v1/health: 200.OK (1 ms)
+2025-01-24 11:12:45.3|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:12:45.3|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:12:45.3|Debug|Api|[GET] /api/v1/indexerStatus: 200.OK (7 ms)
+2025-01-24 11:12:45.3|Debug|Api|[GET] /api/v1/indexer: 200.OK (17 ms)
+2025-01-24 11:12:49.8|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:12:49.8|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:12:49.8|Debug|Api|[GET] /api/v1/downloadclient: 200.OK (6 ms)
+2025-01-24 11:12:49.8|Debug|Api|[POST] /api/v1/indexer/action/getUrls: 200.OK (10 ms)
+2025-01-24 11:13:04.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:13:04.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:13:04.4|Debug|Api|[GET] /api/v1/downloadclient: 200.OK (5 ms)
+2025-01-24 11:13:04.4|Debug|Api|[POST] /api/v1/indexer/action/getUrls: 200.OK (9 ms)
+2025-01-24 11:13:12.1|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:13:12.1|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:13:12.2|Debug|Api|[GET] /api/v1/health: 200.OK (8 ms)
+2025-01-24 11:13:12.2|Debug|Api|[GET] /api/v1/system/status: 200.OK (8 ms)
+2025-01-24 11:15:06.1|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:15:06.1|Debug|Api|[GET] /api/v1/command: 200.OK (0 ms)
+2025-01-24 11:33:07.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:33:07.4|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-01-24 11:33:07.4|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/precompiled/data_top100_recent.json
+2025-01-24 11:33:07.4|Debug|Cardigann|Downloading Feed https://apibay.org/precompiled/data_top100_recent.json
+2025-01-24 11:33:07.6|Debug|ReleaseSearchService|Total of 4 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045] from 1 indexer(s)
+2025-01-24 11:35:59.6|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: SignalR was successfully authenticated.
+2025-01-24 11:35:59.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: SignalR was successfully authenticated.
+2025-01-24 11:35:59.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:35:59.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:35:59.7|Debug|Api|[GET] /api/v1/command: 200.OK (1 ms)
+2025-01-24 11:35:59.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:35:59.7|Debug|Api|[GET] /api/v1/indexer: 200.OK (5 ms)
+2025-01-24 11:35:59.7|Debug|Api|[GET] /api/v1/health: 200.OK (1 ms)
+2025-01-24 11:36:06.1|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:36:06.1|Debug|Api|[GET] /api/v1/command: 200.OK (1 ms)
+2025-01-24 11:41:36.1|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:41:36.1|Debug|Api|[GET] /api/v1/command: 200.OK (1 ms)
+2025-01-24 11:53:34.0|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: SignalR was successfully authenticated.
+2025-01-24 11:53:34.0|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: SignalR was successfully authenticated.
+2025-01-24 11:53:34.0|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:53:34.0|Debug|Api|[GET] /api/v1/health: 200.OK (5 ms)
+2025-01-24 11:53:34.0|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:53:34.0|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:53:34.0|Debug|Api|[GET] /api/v1/command: 200.OK (1 ms)
+2025-01-24 11:53:34.0|Debug|Api|[GET] /api/v1/indexer: 200.OK (9 ms)
+2025-01-24 11:54:04.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:54:04.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:54:04.5|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [Harry Potter and the Philosophers Stone 2001], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-01-24 11:54:04.5|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/q.php?q=harry.potter.and.the.philosophers.stone.2001&cat=200%2C201%2C202%2C204%2C207%2C209%2C210%2C211%2C299
+2025-01-24 11:54:04.5|Debug|Cardigann|Downloading Feed https://apibay.org/q.php?q=harry.potter.and.the.philosophers.stone.2001&cat=200%2C201%2C202%2C204%2C207%2C209%2C210%2C211%2C299
+2025-01-24 11:54:04.6|Debug|ReleaseSearchService|Total of 15 reports were found for Term: [Harry Potter and the Philosophers Stone 2001], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045] from 1 indexer(s)
+2025-01-24 11:54:06.5|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:03:36.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:03:36.2|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-01-24 12:03:36.2|Debug|Cardigann|Adding request for The Pirate Bay: https://apibay.org/precompiled/data_top100_recent.json
+2025-01-24 12:03:36.2|Debug|Cardigann|Downloading Feed https://apibay.org/precompiled/data_top100_recent.json
+2025-01-24 12:03:36.4|Debug|ReleaseSearchService|Total of 4 reports were found for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045] from 1 indexer(s)
+2025-01-24 12:05:29.5|Info|Microsoft.Hosting.Lifetime|Application is shutting down...
+2025-01-24 12:05:29.8|Info|ConsoleApp|Exiting main.

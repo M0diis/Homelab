@@ -1,0 +1,110 @@
+---
+- Calendar:
+    - Media Calendar:
+        widget:
+          type: calendar
+          firstDayInWeek: sunday
+          view: monthly
+          maxEvents: 10
+          showTime: true
+          timezone: Europe/Vilnius
+- Media:
+    - Plex:
+        icon: plex.svg
+        href: "homeserver.local:32400"
+        description: Media Player
+        widget:
+          type: plex
+          url: http://192.168.31.241:32400
+          key: "HoVScbh-5vUoYy-pdAT6"
+          enableBlocks: true
+          enableNowPlaying: true
+          fields: ["streams", "movies"]
+
+    - Immich:
+        icon: immich.svg
+        href: "http://192.168.31.241:2283"
+        description: Photos
+        widget:
+          type: immich
+          url: http://192.168.0.115:2283
+          key: Lim9l6f6q1M0jJoQ1MGMSBNGDBrUrdkHov36JCLxkg
+          version: 2
+          
+- Network and IoT:
+    - Pihole:
+        icon: pi-hole.svg
+        href: "homeserver.local:8080"
+        description: Pi-hole
+        widget:
+          type: pihole
+          url: http://192.168.31.241:8080
+          key: f5d0cef69679300b5b6dbbf7de0931e33894cd8a76ad872deecba5281b9ceb83
+
+    - Netdata:
+        icon: netdata.svg
+        href: "homeserver.local:19999"
+        description: Netdata
+        widget:
+          type: netdata
+          url: http://192.168.31.241:19999
+          
+    - Tailscale:
+        icon: tailscale.svg
+        description: Tailscale
+        widget:
+          type: tailscale
+          deviceid: noswsUktJC11CNTRL
+          key: tskey-api-kj8GUqt6Yk11CNTRL-5JK29xDooJ96jAgejQgWJ9283fV4ya96
+          
+    - NPM:
+        icon: nginx-proxy-manager.svg
+        description: Nginx Proxy Manager
+        href: "homeserver.local:81"
+        widget:
+          type: npm
+          url: http://192.168.31.241:81
+          username: modestaskazlauskas1@gmail.com
+          password: M863660905k-
+          
+    - Wg-easy:
+        icon: wireguard.svg
+        description: Wg-easy
+        href: "homeserver.local:51821"
+        widget:
+          type: wgeasy
+          url: http://192.168.31.241:51821
+          password: M863660905k-
+          threshold: 2
+          fields: ["connected", "enabled", "disabled", "total"]
+          
+    - Home Assistant:
+        icon: home-assistant.svg
+        href: "homeserver.local:8123"
+        description: Home Automation
+        widget:
+          type: homeassistant
+          url: http://192.168.31.241:8123
+          key: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiI1MDRhODIwZDQ4OWI0NTQ1ODM2N2JkYWE5MzQwZDRkMCIsImlhdCI6MTczNDYwNjAzMSwiZXhwIjoyMDQ5OTY2MDMxfQ.EzWJ1WrHEAb3tZvZ7SE7vczOp6wzKHXLrCp954jYfBE"
+          
+- Monitoring:   
+    - Uptime Kuma:
+        icon: uptime-kuma.svg
+        href: "http://homeserver.local:3001"
+        description: Status Monitor
+        widget:
+          type: uptimekuma
+          url: http://192.168.31.241:3001
+          slug: home
+          
+- Storage:
+    - Paperless-ngx:
+        icon: paperless-ngx.svg
+        href: "http://homeserver.local:8100"
+        description: Documents
+        widget:
+          type: paperlessngx
+          url: http://192.168.31.241:8100
+          username: m0dis
+          password: M863660905k-
+          

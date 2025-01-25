@@ -1,0 +1,43 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/bookmarks
+
+- Quick:
+    - YouTube:
+        - icon: youtube.svg
+          href: https://youtube.com
+          description: Video Monopoly
+    - Proton Mail:
+        - icon: proton-mail.svg
+          href: https://mail.proton.me
+          description: Encrypted Email
+    - Proton Drive:
+        - icon: proton-drive.svg
+          href: https://drive.proton.me
+          description: Encrypted Cloud Storage
+          ping: https://drive.proton.me
+    - Simple Login:
+        - icon: simplelogin.svg
+          href: https://app.simplelogin.io
+          description: Email Alias
+    - Mouse Sensitivity:
+        - icon: logitech-gaming.svg
+          href: https://www.mouse-sensitivity.com
+          description: Sensitivity Conversion Tool
+- Access:
+    - Homepage:
+        - icon: homepage.png
+          href: https://gethomepage.dev/main/
+          description: Homepage Documentation
+    - ChatGPT:
+        - icon: chatgpt.svg
+          href: https://chat.openai.com/
+          description: Chat Bot
+    - Artifact Hub:
+        - icon: helm.svg
+          href: https://artifacthub.io
+          description: Helm Charts
+    - Dashboard Icons:
+        - icon: github.svg
+          href: https://github.com/walkxcode/dashboard-icons
+          description: Icon Repository

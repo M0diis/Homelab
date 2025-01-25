@@ -1,0 +1,126 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "auth",
+  "data": {
+    "users": [
+      {
+        "id": "ea9ce421fcae442ab23da627da2f0a7d",
+        "group_ids": [
+          "system-read-only"
+        ],
+        "is_owner": false,
+        "is_active": true,
+        "name": "Home Assistant Content",
+        "system_generated": true,
+        "local_only": false
+      },
+      {
+        "id": "8344a08df80f4719baec01ac4f319aec",
+        "group_ids": [
+          "system-admin"
+        ],
+        "is_owner": true,
+        "is_active": true,
+        "name": "Modestas",
+        "system_generated": false,
+        "local_only": false
+      }
+    ],
+    "groups": [
+      {
+        "id": "system-admin",
+        "name": "Administrators"
+      },
+      {
+        "id": "system-users",
+        "name": "Users"
+      },
+      {
+        "id": "system-read-only",
+        "name": "Read Only"
+      }
+    ],
+    "credentials": [
+      {
+        "id": "1ec6c99038bd4d7eb3b68fdc471123f8",
+        "user_id": "8344a08df80f4719baec01ac4f319aec",
+        "auth_provider_type": "homeassistant",
+        "auth_provider_id": null,
+        "data": {
+          "username": "m0dis"
+        }
+      }
+    ],
+    "refresh_tokens": [
+      {
+        "id": "865ad436819442459fa9c645ce89c18e",
+        "user_id": "ea9ce421fcae442ab23da627da2f0a7d",
+        "client_id": null,
+        "client_name": null,
+        "client_icon": null,
+        "token_type": "system",
+        "created_at": "2024-12-19T10:55:47.734336+00:00",
+        "access_token_expiration": 1800.0,
+        "token": "f753d32f95ec272d85ed4e5663e665ef4705ec3ccdf9c716d1c0750f13d031017843c135ae898649a9a3d60bdcd367ed4ad2ca9df69dac349a0aa515c52d8fd6",
+        "jwt_key": "e989582c8e619066225a3b46b81bb906fe7cf96fc2bdfc4b3bdd71e97529823734b41125ba6310df1eb88c13dc89b2ef458dbf991deaa75d5f408c15d64fb128",
+        "last_used_at": null,
+        "last_used_ip": null,
+        "expire_at": null,
+        "credential_id": null,
+        "version": "2024.12.4"
+      },
+      {
+        "id": "c4449e076f494549b98b716d92c4d91d",
+        "user_id": "8344a08df80f4719baec01ac4f319aec",
+        "client_id": "http://homeserver.local:8123/",
+        "client_name": null,
+        "client_icon": null,
+        "token_type": "normal",
+        "created_at": "2024-12-19T10:58:13.335954+00:00",
+        "access_token_expiration": 1800.0,
+        "token": "c1d79077a5b2c08e6c7f3e182ea07e01e40c7ceff50c409e20b8496f5e94e9e87fd81b677c651c987efaa55e908e44fe0934c98fc0b5477c7721a9e565fcda66",
+        "jwt_key": "eb5e89cc4da2739e7f5c147274a282ec6ad866865c2ac94cf0a48afa819ebca0b1fc915576539f507d19b16319ae68a0cc24d07818aa0e5a22f4210710ee55df",
+        "last_used_at": "2024-12-19T10:58:13.335984+00:00",
+        "last_used_ip": "192.168.31.24",
+        "expire_at": 1742381893.335984,
+        "credential_id": "1ec6c99038bd4d7eb3b68fdc471123f8",
+        "version": "2024.12.4"
+      },
+      {
+        "id": "c9f61b6c6f324bac8f0b1e972e7d5f5b",
+        "user_id": "8344a08df80f4719baec01ac4f319aec",
+        "client_id": "http://homeserver.local:8123/",
+        "client_name": null,
+        "client_icon": null,
+        "token_type": "normal",
+        "created_at": "2024-12-19T11:00:13.003060+00:00",
+        "access_token_expiration": 1800.0,
+        "token": "0fae725da237041e9456cfa4fd190e3fc1d8559d189ed8b0fadbc594a07f81583ded0314115dc304711426560e35cd45646f3ba42ed0b2a13292def8c159dcf8",
+        "jwt_key": "b17eecfd9862f9b76cb737ba4855edadf1bfa450a35a23088b48c3a5dc86eebf9e70b47963768fd02d90a5b169568b51defc2ac89931bbc8f1f29c093a0a1777",
+        "last_used_at": "2025-01-25T10:53:15.528565+00:00",
+        "last_used_ip": "192.168.31.24",
+        "expire_at": 1745578395.528565,
+        "credential_id": "1ec6c99038bd4d7eb3b68fdc471123f8",
+        "version": "2024.12.4"
+      },
+      {
+        "id": "504a820d489b45458367bdaa9340d4d0",
+        "user_id": "8344a08df80f4719baec01ac4f319aec",
+        "client_id": null,
+        "client_name": "Homepage",
+        "client_icon": null,
+        "token_type": "long_lived_access_token",
+        "created_at": "2024-12-19T11:00:31.946601+00:00",
+        "access_token_expiration": 315360000.0,
+        "token": "20f5015adfb73aa1cd3fd015b8d1e032ec6e0321b1a9c73a6275984f41e6854cf36fe38ad375d085ef09e14270edcdfd44b68c077788c9edb025ba9cd5b41392",
+        "jwt_key": "412bd26b09f1344bd2388977e1506bd7b6baaa6b1c7ebb7f511f36db68425596237e54c917873a13784a5dc7b6d325392f33b4ffef94866996c91ff85d51ab43",
+        "last_used_at": "2024-12-19T11:00:31.946645+00:00",
+        "last_used_ip": null,
+        "expire_at": null,
+        "credential_id": null,
+        "version": "2024.12.4"
+      }
+    ]
+  }
+}

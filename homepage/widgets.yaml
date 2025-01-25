@@ -1,0 +1,27 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/service-widgets
+
+- resources:
+    cpu: true
+    memory: true
+    disk: /
+
+- openmeteo:
+    label: Kaunas
+    lattitude: 54.898521
+    longitude: 23.903597
+    timezone: Europe/Vilnius
+    units: metric
+    cache: 5
+    
+- search:
+    provider: google
+    target: _blank
+    focus: true
+    showSearchSuggestions: true
+    
+- datetime:
+    text_size: xl
+    format:
+      timeStyle: short
