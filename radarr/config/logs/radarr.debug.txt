@@ -1,0 +1,770 @@
+2025-01-24 11:54:22.5|Debug|Api|[GET] /api/v3/filesystem?path=%2Fdata%2Fdownloads%2F&allowFoldersWithoutTrailingSlashes=true&includeFiles=false: 200.OK (3 ms)
+2025-01-24 11:54:24.4|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:54:24.4|Debug|Api|[GET] /api/v3/filesystem?path=%2Fdata%2F&allowFoldersWithoutTrailingSlashes=true&includeFiles=false: 200.OK (3 ms)
+2025-01-24 11:54:27.2|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:54:27.2|Debug|Api|[GET] /api/v3/filesystem?path=%2Fdata%2Fmovies%2F&allowFoldersWithoutTrailingSlashes=true&includeFiles=false: 200.OK (0 ms)
+2025-01-24 11:54:32.2|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:54:32.2|Debug|MoveMovieService|Folder '/home/(removed)/data/movies/Harry Potter and the Philosopher's Stone (2001)' for 'Harry Potter and the Philosopher's Stone' does not exist, not moving.
+2025-01-24 11:54:32.3|Debug|Api|[PUT] /api/v3/movie/3?moveFiles=true: 202.Accepted (108 ms)
+2025-01-24 11:54:32.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:54:32.5|Debug|Api|[GET] /api/v3/command: 200.OK (6 ms)
+2025-01-24 11:54:33.7|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:54:33.7|Debug|Api|[GET] /api/v3/language: 200.OK (3 ms)
+2025-01-24 11:54:33.7|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:54:33.7|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:54:33.7|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:54:33.7|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:54:33.7|Debug|Api|[GET] /api/v3/movieFile?movieId=3: 200.OK (2 ms)
+2025-01-24 11:54:33.7|Debug|Api|[GET] /api/v3/qualityprofile/schema: 200.OK (2 ms)
+2025-01-24 11:54:33.8|Debug|Api|[GET] /api/v3/blocklist/movie?movieId=3: 200.OK (2 ms)
+2025-01-24 11:54:33.8|Debug|Api|[GET] /api/v3/extraFile?movieId=3: 200.OK (4 ms)
+2025-01-24 11:54:33.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:54:33.8|Debug|Api|[GET] /api/v3/credit?movieId=3: 200.OK (9 ms)
+2025-01-24 11:54:33.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:54:33.8|Debug|Api|[GET] /api/v3/queue/details?movieId=3: 200.OK (1 ms)
+2025-01-24 11:54:33.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:54:33.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:54:33.8|Debug|Api|[GET] /api/v3/rootFolder: 200.OK (2 ms)
+2025-01-24 11:54:33.8|Debug|Api|[GET] /api/v3/importlist/schema: 200.OK (5 ms)
+2025-01-24 11:54:34.7|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:54:34.7|Debug|Api|[GET] /api/v3/queue?page=1&pageSize=20&sortDirection=ascending&sortKey=timeleft&includeUnknownMovieItems=true: 200.OK (9 ms)
+2025-01-24 11:54:36.3|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:54:36.3|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:54:36.3|Debug|Api|[GET] /api/v3/system/status: 200.OK (2 ms)
+2025-01-24 11:54:36.3|Debug|Api|[GET] /api/v3/diskspace: 200.OK (17 ms)
+2025-01-24 11:54:36.6|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:54:36.6|Debug|Api|[GET] /api/v3/health: 200.OK (3 ms)
+2025-01-24 11:55:03.9|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:03.9|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:03.9|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:03.9|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:03.9|Debug|Api|[GET] /api/v3/rootFolder: 200.OK (6 ms)
+2025-01-24 11:55:03.9|Debug|Api|[GET] /api/v3/config/naming: 200.OK (23 ms)
+2025-01-24 11:55:03.9|Debug|Api|[GET] /api/v3/config/mediamanagement: 200.OK (51 ms)
+2025-01-24 11:55:03.9|Debug|MediaInfoFormatter|Unknown video format: 'AVC' in 'The.Movie.Title.2010.1080p.BluRay.DTS.x264-EVOLVE'. Streams: 
+2025-01-24 11:55:04.0|Debug|MediaInfoFormatter|Unknown audio format: 'DTS' in 'The.Movie.Title.2010.1080p.BluRay.DTS.x264-EVOLVE'. Streams: 
+2025-01-24 11:55:04.1|Debug|Api|[GET] /api/v3/config/naming/examples: 200.OK (189 ms)
+2025-01-24 11:55:12.1|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:12.1|Debug|Api|[DELETE] /api/v3/rootFolder/1: 200.OK (10 ms)
+2025-01-24 11:55:12.6|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:12.6|Debug|Api|[GET] /api/v3/filesystem?path=&allowFoldersWithoutTrailingSlashes=true&includeFiles=true: 200.OK (4 ms)
+2025-01-24 11:55:16.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:16.5|Debug|Api|[GET] /api/v3/filesystem?path=f&allowFoldersWithoutTrailingSlashes=true&includeFiles=true: 200.OK (3 ms)
+2025-01-24 11:55:17.0|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:17.0|Debug|Api|[GET] /api/v3/filesystem?path=d&allowFoldersWithoutTrailingSlashes=true&includeFiles=true: 200.OK (3 ms)
+2025-01-24 11:55:17.1|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:17.1|Debug|Api|[GET] /api/v3/filesystem?path=da&allowFoldersWithoutTrailingSlashes=true&includeFiles=true: 200.OK (0 ms)
+2025-01-24 11:55:17.2|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:17.2|Debug|Api|[GET] /api/v3/filesystem?path=dat&allowFoldersWithoutTrailingSlashes=true&includeFiles=true: 200.OK (0 ms)
+2025-01-24 11:55:17.3|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:17.3|Debug|Api|[GET] /api/v3/filesystem?path=data&allowFoldersWithoutTrailingSlashes=true&includeFiles=true: 200.OK (0 ms)
+2025-01-24 11:55:18.0|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:18.0|Debug|Api|[GET] /api/v3/filesystem?path=d&allowFoldersWithoutTrailingSlashes=true&includeFiles=true: 200.OK (3 ms)
+2025-01-24 11:55:18.1|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:18.1|Debug|Api|[GET] /api/v3/filesystem?path=da&allowFoldersWithoutTrailingSlashes=true&includeFiles=true: 200.OK (0 ms)
+2025-01-24 11:55:19.0|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:19.0|Debug|Api|[GET] /api/v3/filesystem?path=%2F&allowFoldersWithoutTrailingSlashes=true&includeFiles=true: 200.OK (3 ms)
+2025-01-24 11:55:19.1|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:19.1|Debug|Api|[GET] /api/v3/filesystem?path=%2Fd&allowFoldersWithoutTrailingSlashes=true&includeFiles=true: 200.OK (1 ms)
+2025-01-24 11:55:19.2|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:19.2|Debug|Api|[GET] /api/v3/filesystem?path=%2Fda&allowFoldersWithoutTrailingSlashes=true&includeFiles=true: 200.OK (1 ms)
+2025-01-24 11:55:19.3|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:19.3|Debug|Api|[GET] /api/v3/filesystem?path=%2Fdat&allowFoldersWithoutTrailingSlashes=true&includeFiles=true: 200.OK (3 ms)
+2025-01-24 11:55:19.4|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:19.4|Debug|Api|[GET] /api/v3/filesystem?path=%2Fdata&allowFoldersWithoutTrailingSlashes=true&includeFiles=true: 200.OK (0 ms)
+2025-01-24 11:55:21.1|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:21.2|Debug|RootFolderService|Generating list of unmapped folders
+2025-01-24 11:55:21.2|Debug|RootFolderService|2 unmapped folders detected.
+2025-01-24 11:55:21.2|Debug|RootFolderService|Generating list of unmapped folders
+2025-01-24 11:55:21.2|Debug|RootFolderService|2 unmapped folders detected.
+2025-01-24 11:55:21.2|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:21.2|Debug|RootFolderService|Generating list of unmapped folders
+2025-01-24 11:55:21.2|Debug|RootFolderService|2 unmapped folders detected.
+2025-01-24 11:55:21.2|Debug|RootFolderService|Generating list of unmapped folders
+2025-01-24 11:55:21.2|Debug|RootFolderService|2 unmapped folders detected.
+2025-01-24 11:55:21.2|Debug|Api|[POST] /api/v3/rootFolder: 201.Created (46 ms)
+2025-01-24 11:55:21.2|Debug|Api|[GET] /api/v3/rootFolder: 200.OK (4 ms)
+2025-01-24 11:55:24.9|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:24.9|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (3 ms)
+2025-01-24 11:55:26.2|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:26.2|Debug|Api|[GET] /api/v3/health: 200.OK (3 ms)
+2025-01-24 11:55:27.0|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:27.0|Debug|Api|[GET] /api/v3/queue?page=1&pageSize=20&sortDirection=ascending&sortKey=timeleft&includeUnknownMovieItems=true: 200.OK (2 ms)
+2025-01-24 11:55:32.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:32.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:32.8|Debug|Api|[GET] /api/v3/qualityprofile/schema: 200.OK (1 ms)
+2025-01-24 11:55:32.8|Debug|Api|[GET] /api/v3/language: 200.OK (1 ms)
+2025-01-24 11:55:32.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:32.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:32.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:32.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:32.8|Debug|Api|[GET] /api/v3/extraFile?movieId=3: 200.OK (1 ms)
+2025-01-24 11:55:32.8|Debug|Api|[GET] /api/v3/blocklist/movie?movieId=3: 200.OK (5 ms)
+2025-01-24 11:55:32.8|Debug|Api|[GET] /api/v3/movieFile?movieId=3: 200.OK (6 ms)
+2025-01-24 11:55:32.8|Debug|Api|[GET] /api/v3/credit?movieId=3: 200.OK (10 ms)
+2025-01-24 11:55:32.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:32.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:32.8|Debug|Api|[GET] /api/v3/queue/details?movieId=3: 200.OK (1 ms)
+2025-01-24 11:55:32.8|Debug|Api|[GET] /api/v3/importlist/schema: 200.OK (5 ms)
+2025-01-24 11:55:32.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:32.8|Debug|RootFolderService|Generating list of unmapped folders
+2025-01-24 11:55:32.8|Debug|RootFolderService|2 unmapped folders detected.
+2025-01-24 11:55:32.8|Debug|Api|[GET] /api/v3/rootFolder: 200.OK (6 ms)
+2025-01-24 11:55:34.6|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:34.6|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (7 ms)
+2025-01-24 11:55:35.7|Debug|Parser|Parsing string 'Harry Potter and the Philosophers Stone 2001 Extended 1080p BluRay x264-OFT'
+2025-01-24 11:55:35.7|Debug|Parser|Movie Parsed. Harry Potter and the Philosophers Stone - 2001 
+2025-01-24 11:55:35.7|Debug|Parser|Release Group parsed: OFT
+2025-01-24 11:55:35.7|Debug|Parser|Languages parsed: Unknown
+2025-01-24 11:55:35.7|Debug|QualityParser|Trying to parse quality for 'Harry Potter and the Philosophers Stone 2001 Extended 1080p BluRay x264-OFT'
+2025-01-24 11:55:35.7|Debug|Parser|Quality parsed: Bluray-1080p v1
+2025-01-24 11:55:35.7|Debug|Parser|Edition parsed: Extended
+2025-01-24 11:55:35.7|Debug|AggregateLanguages|Language couldn't be parsed from release, fallback to movie original language: English
+2025-01-24 11:55:35.7|Debug|AggregateLanguages|Selected languages: English
+2025-01-24 11:55:35.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:35.8|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (1 ms)
+2025-01-24 11:55:35.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:35.8|Debug|Api|[GET] /api/v3/command: 200.OK (1 ms)
+2025-01-24 11:55:35.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:35.8|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (1 ms)
+2025-01-24 11:55:35.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:35.8|Debug|Api|[GET] /api/v3/command: 200.OK (0 ms)
+2025-01-24 11:55:38.2|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:38.2|Debug|Api|[GET] /api/v3/health: 200.OK (3 ms)
+2025-01-24 11:55:38.2|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:38.2|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:38.2|Debug|Api|[GET] /api/v3/system/status: 200.OK (3 ms)
+2025-01-24 11:55:38.2|Debug|Api|[GET] /api/v3/diskspace: 200.OK (12 ms)
+2025-01-24 11:55:41.9|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:41.9|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (4 ms)
+2025-01-24 11:55:44.7|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:44.7|Debug|Api|[GET] /api/v3/filesystem?path=%2Fdata%2Fmovies%2F&allowFoldersWithoutTrailingSlashes=true&includeFiles=false: 200.OK (3 ms)
+2025-01-24 11:55:45.7|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:45.7|Debug|Api|[GET] /api/v3/filesystem?path=%2Fdata%2F&allowFoldersWithoutTrailingSlashes=true&includeFiles=false: 200.OK (3 ms)
+2025-01-24 11:55:48.3|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:48.3|Debug|Api|[GET] /api/v3/filesystem?path=%2Fdata%2F&allowFoldersWithoutTrailingSlashes=false&includeFiles=false: 200.OK (1 ms)
+2025-01-24 11:55:48.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:48.8|Debug|Api|[GET] /api/v3/filesystem?path=%2Fdata%2F&allowFoldersWithoutTrailingSlashes=true&includeFiles=false: 200.OK (0 ms)
+2025-01-24 11:55:49.7|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:49.7|Debug|Api|[GET] /api/v3/filesystem?path=%2Fdata%2Fmovies%2F&allowFoldersWithoutTrailingSlashes=true&includeFiles=false: 200.OK (3 ms)
+2025-01-24 11:55:51.0|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:51.0|Debug|Api|[PUT] /api/v3/movie/3: 202.Accepted (25 ms)
+2025-01-24 11:55:52.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:52.5|Debug|Api|[GET] /api/v3/health: 200.OK (6 ms)
+2025-01-24 11:55:52.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:52.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:52.5|Debug|Api|[GET] /api/v3/system/status: 200.OK (1 ms)
+2025-01-24 11:55:52.5|Debug|Api|[GET] /api/v3/diskspace: 200.OK (10 ms)
+2025-01-24 11:55:55.2|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:55.2|Debug|Api|[GET] /api/v3/localization/language: 200.OK (3 ms)
+2025-01-24 11:55:55.3|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:55.3|Debug|Api|[GET] /api/v3/movie: 200.OK (6 ms)
+2025-01-24 11:55:55.3|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:55.3|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:55.3|Debug|Api|[GET] /api/v3/collection: 200.OK (5 ms)
+2025-01-24 11:55:55.3|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:55.3|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:55.3|Debug|Api|[GET] /api/v3/customFilter: 200.OK (2 ms)
+2025-01-24 11:55:55.3|Debug|Api|[GET] /api/v3/tag: 200.OK (2 ms)
+2025-01-24 11:55:55.3|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:55.3|Debug|Api|[GET] /api/v3/language: 200.OK (0 ms)
+2025-01-24 11:55:55.3|Debug|Api|[GET] /api/v3/qualityprofile: 200.OK (3 ms)
+2025-01-24 11:55:55.3|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:55.3|Debug|Api|[GET] /api/v3/indexerFlag: 200.OK (1 ms)
+2025-01-24 11:55:55.3|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:55.3|Debug|Api|[GET] /api/v3/importlist: 200.OK (1 ms)
+2025-01-24 11:55:55.3|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:55.3|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:55.3|Debug|Api|[GET] /api/v3/config/ui: 200.OK (1 ms)
+2025-01-24 11:55:55.3|Debug|Api|[GET] /api/v3/system/status: 200.OK (1 ms)
+2025-01-24 11:55:55.3|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:55.3|Debug|Api|[GET] /api/v3/localization: 200.OK (4 ms)
+2025-01-24 11:55:55.4|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: SignalR was successfully authenticated.
+2025-01-24 11:55:55.4|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:55.4|Debug|Api|[GET] /api/v3/queue/status: 200.OK (1 ms)
+2025-01-24 11:55:55.4|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:55.4|Debug|Api|[GET] /api/v3/health: 200.OK (0 ms)
+2025-01-24 11:55:55.4|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:55.4|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:55.4|Debug|Api|[GET] /api/v3/system/status: 200.OK (1 ms)
+2025-01-24 11:55:55.4|Debug|Api|[GET] /api/v3/diskspace: 200.OK (9 ms)
+2025-01-24 11:55:55.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:55:55.5|Debug|Api|[GET] /api/v3/health: 200.OK (0 ms)
+2025-01-24 11:55:55.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: SignalR was successfully authenticated.
+2025-01-24 11:56:36.0|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:56:36.0|Debug|Api|[GET] /api/v3/queue?page=1&pageSize=20&sortDirection=ascending&sortKey=timeleft&includeUnknownMovieItems=true: 200.OK (5 ms)
+2025-01-24 11:56:39.6|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:56:39.6|Debug|Api|[GET] /api/v3/localization/language: 200.OK (7 ms)
+2025-01-24 11:56:39.6|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:56:39.6|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:56:39.6|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:56:39.6|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:56:39.6|Debug|Api|[GET] /api/v3/tag: 200.OK (1 ms)
+2025-01-24 11:56:39.6|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:56:39.6|Debug|Api|[GET] /api/v3/language: 200.OK (0 ms)
+2025-01-24 11:56:39.6|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:56:39.6|Debug|Api|[GET] /api/v3/qualityprofile: 200.OK (3 ms)
+2025-01-24 11:56:39.6|Debug|Api|[GET] /api/v3/customFilter: 200.OK (1 ms)
+2025-01-24 11:56:39.6|Debug|Api|[GET] /api/v3/collection: 200.OK (9 ms)
+2025-01-24 11:56:39.6|Debug|Api|[GET] /api/v3/movie: 200.OK (10 ms)
+2025-01-24 11:56:39.7|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:56:39.7|Debug|Api|[GET] /api/v3/indexerFlag: 200.OK (1 ms)
+2025-01-24 11:56:39.7|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:56:39.7|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:56:39.7|Debug|Api|[GET] /api/v3/config/ui: 200.OK (1 ms)
+2025-01-24 11:56:39.7|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:56:39.7|Debug|Api|[GET] /api/v3/importlist: 200.OK (1 ms)
+2025-01-24 11:56:39.7|Debug|Api|[GET] /api/v3/system/status: 200.OK (2 ms)
+2025-01-24 11:56:39.7|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:56:39.7|Debug|Api|[GET] /api/v3/localization: 200.OK (5 ms)
+2025-01-24 11:56:39.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: SignalR was successfully authenticated.
+2025-01-24 11:56:39.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:56:39.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:56:39.8|Debug|Api|[GET] /api/v3/queue/status: 200.OK (1 ms)
+2025-01-24 11:56:39.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:56:39.8|Debug|Api|[GET] /api/v3/health: 200.OK (1 ms)
+2025-01-24 11:56:39.8|Debug|Api|[GET] /api/v3/queue?page=1&pageSize=20&sortDirection=ascending&sortKey=timeleft&includeUnknownMovieItems=true: 200.OK (3 ms)
+2025-01-24 11:56:39.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: SignalR was successfully authenticated.
+2025-01-24 11:56:45.9|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:56:45.9|Debug|Api|[GET] /api/v3/language: 200.OK (1 ms)
+2025-01-24 11:56:46.0|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:56:46.0|Debug|Api|[GET] /api/v3/qualityprofile/schema: 200.OK (1 ms)
+2025-01-24 11:56:46.0|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:56:46.0|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:56:46.0|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:56:46.0|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:56:46.0|Debug|Api|[GET] /api/v3/extraFile?movieId=3: 200.OK (4 ms)
+2025-01-24 11:56:46.0|Debug|Api|[GET] /api/v3/blocklist/movie?movieId=3: 200.OK (5 ms)
+2025-01-24 11:56:46.0|Debug|Api|[GET] /api/v3/queue/details?movieId=3: 200.OK (3 ms)
+2025-01-24 11:56:46.0|Debug|Api|[GET] /api/v3/movieFile?movieId=3: 200.OK (7 ms)
+2025-01-24 11:56:46.0|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:56:46.0|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:56:46.0|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:56:46.0|Debug|Api|[GET] /api/v3/importlist/schema: 200.OK (7 ms)
+2025-01-24 11:56:46.0|Debug|RootFolderService|Generating list of unmapped folders
+2025-01-24 11:56:46.0|Debug|RootFolderService|2 unmapped folders detected.
+2025-01-24 11:56:46.0|Debug|Api|[GET] /api/v3/rootFolder: 200.OK (14 ms)
+2025-01-24 11:56:46.0|Debug|Api|[GET] /api/v3/credit?movieId=3: 200.OK (25 ms)
+2025-01-24 11:56:47.7|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:56:47.7|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (4 ms)
+2025-01-24 11:57:04.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:57:04.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:57:04.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:57:04.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was not authenticated.
+2025-01-24 11:57:04.8|Debug|Api|[GET] /api/v3/system/status: 200.OK (5 ms)
+2025-01-24 11:57:04.8|Debug|Api|[GET] /api/v3/health: 200.OK (6 ms)
+2025-01-24 11:57:04.8|Info|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was challenged.
+2025-01-24 11:57:04.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was not authenticated.
+2025-01-24 11:57:04.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was not authenticated.
+2025-01-24 11:57:04.8|Info|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was challenged.
+2025-01-24 11:57:04.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was not authenticated.
+2025-01-24 11:57:04.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was not authenticated.
+2025-01-24 11:57:04.8|Info|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was challenged.
+2025-01-24 11:57:04.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was not authenticated.
+2025-01-24 11:57:04.8|Info|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was challenged.
+2025-01-24 11:57:04.8|Info|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was challenged.
+2025-01-24 11:57:04.8|Info|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was challenged.
+2025-01-24 11:57:04.8|Debug|Api|[GET] /api/v3/diskspace: 200.OK (18 ms)
+2025-01-24 11:57:05.7|Debug|Parser|Parsing string 'Harry Potter and the Philosophers Stone 2001 Extended 1080p BluRay x264-OFT'
+2025-01-24 11:57:05.7|Debug|Parser|Movie Parsed. Harry Potter and the Philosophers Stone - 2001 
+2025-01-24 11:57:05.7|Debug|Parser|Release Group parsed: OFT
+2025-01-24 11:57:05.7|Debug|Parser|Languages parsed: Unknown
+2025-01-24 11:57:05.7|Debug|QualityParser|Trying to parse quality for 'Harry Potter and the Philosophers Stone 2001 Extended 1080p BluRay x264-OFT'
+2025-01-24 11:57:05.7|Debug|Parser|Quality parsed: Bluray-1080p v1
+2025-01-24 11:57:05.7|Debug|Parser|Edition parsed: Extended
+2025-01-24 11:57:05.7|Debug|AggregateLanguages|Language couldn't be parsed from release, fallback to movie original language: English
+2025-01-24 11:57:05.7|Debug|AggregateLanguages|Selected languages: English
+2025-01-24 11:57:05.7|Debug|TrackedDownloadService|Tracking 'qBittorrent:Harry Potter and the Philosophers Stone 2001 Extended 1080p BluRay x264-OFT': ClientState=Completed (readonly) RadarrStage=Downloading Movie='Harry Potter and the Philosophers Stone - 2001 Bluray-1080p v1' OutputPath=/home/(removed)/Desktop/radarr/data/downloads/www.Torrenting.com - Harry Potter and the Philosophers Stone 2001 Extended 1080p BluRay x264-OFT.
+2025-01-24 11:57:05.8|Debug|Parser|Parsing string 'Harry Potter and the Philosophers Stone 2001 Extended 1080p BluRay x264-OFT'
+2025-01-24 11:57:05.8|Debug|Parser|Movie Parsed. Harry Potter and the Philosophers Stone - 2001 
+2025-01-24 11:57:05.8|Debug|Parser|Release Group parsed: OFT
+2025-01-24 11:57:05.8|Debug|Parser|Languages parsed: Unknown
+2025-01-24 11:57:05.8|Debug|QualityParser|Trying to parse quality for 'Harry Potter and the Philosophers Stone 2001 Extended 1080p BluRay x264-OFT'
+2025-01-24 11:57:05.8|Debug|Parser|Quality parsed: Bluray-1080p v1
+2025-01-24 11:57:05.8|Debug|Parser|Edition parsed: Extended
+2025-01-24 11:57:05.8|Debug|DownloadedMovieImportService|Processing path: /home/(removed)/Desktop/radarr/data/downloads/www.Torrenting.com - Harry Potter and the Philosophers Stone 2001 Extended 1080p BluRay x264-OFT
+2025-01-24 11:57:05.8|Error|DownloadedMovieImportService|Import failed, path does not exist or is not accessible by Radarr: /home/(removed)/Desktop/radarr/data/downloads/www.Torrenting.com - Harry Potter and the Philosophers Stone 2001 Extended 1080p BluRay x264-OFT. Ensure the path exists and the user running Radarr has the correct permissions to access this file/folder
+2025-01-24 11:57:05.8|Debug|CompletedDownloadService|Not all movies have been imported for Harry Potter and the Philosophers Stone 2001 Extended 1080p BluRay x264-OFT
+2025-01-24 11:57:05.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:57:05.8|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (1 ms)
+2025-01-24 11:57:05.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:57:05.8|Debug|Api|[GET] /api/v3/command: 200.OK (0 ms)
+2025-01-24 11:57:05.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:57:05.8|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (1 ms)
+2025-01-24 11:57:05.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:57:05.8|Debug|Api|[GET] /api/v3/command: 200.OK (1 ms)
+2025-01-24 11:57:33.1|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:57:33.1|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:57:33.1|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (1 ms)
+2025-01-24 11:57:33.1|Debug|RootFolderService|Generating list of unmapped folders
+2025-01-24 11:57:33.1|Debug|RootFolderService|2 unmapped folders detected.
+2025-01-24 11:57:33.1|Debug|Api|[GET] /api/v3/rootFolder: 200.OK (6 ms)
+2025-01-24 11:57:39.7|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:57:39.7|Debug|MovieCollectionService|Updating 1 movie collections
+2025-01-24 11:57:39.7|Debug|MovieCollectionService|1 movie collections updated
+2025-01-24 11:57:39.7|Debug|Api|[PUT] /api/v3/collection: 202.Accepted (33 ms)
+2025-01-24 11:57:39.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:57:39.8|Debug|Api|[GET] /api/v3/collection: 200.OK (4 ms)
+2025-01-24 11:57:39.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:57:39.8|Debug|Api|[GET] /api/v3/command: 200.OK (3 ms)
+2025-01-24 11:57:43.9|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:57:43.9|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:57:43.9|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:57:43.9|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:57:43.9|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:57:43.9|Debug|Api|[GET] /api/v3/qualityprofile/schema: 200.OK (3 ms)
+2025-01-24 11:57:43.9|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:57:43.9|Debug|Api|[GET] /api/v3/language: 200.OK (4 ms)
+2025-01-24 11:57:43.9|Debug|Api|[GET] /api/v3/movieFile?movieId=3: 200.OK (5 ms)
+2025-01-24 11:57:43.9|Debug|Api|[GET] /api/v3/blocklist/movie?movieId=3: 200.OK (8 ms)
+2025-01-24 11:57:43.9|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:57:43.9|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:57:43.9|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:57:43.9|Debug|Api|[GET] /api/v3/extraFile?movieId=3: 200.OK (16 ms)
+2025-01-24 11:57:43.9|Debug|Api|[GET] /api/v3/importlist/schema: 200.OK (6 ms)
+2025-01-24 11:57:43.9|Debug|Api|[GET] /api/v3/queue/details?movieId=3: 200.OK (9 ms)
+2025-01-24 11:57:43.9|Debug|RootFolderService|Generating list of unmapped folders
+2025-01-24 11:57:43.9|Debug|RootFolderService|2 unmapped folders detected.
+2025-01-24 11:57:43.9|Debug|Api|[GET] /api/v3/credit?movieId=3: 200.OK (23 ms)
+2025-01-24 11:57:43.9|Debug|Api|[GET] /api/v3/rootFolder: 200.OK (11 ms)
+2025-01-24 11:57:44.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:57:44.8|Debug|Api|[GET] /api/v3/health: 200.OK (3 ms)
+2025-01-24 11:57:46.0|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:57:46.0|Debug|Parser|Parsing string 'movies'
+2025-01-24 11:57:46.0|Debug|Parser|Unable to parse movies
+2025-01-24 11:57:46.0|Debug|DiskScanService|Scanning '/data/movies/' for video files
+2025-01-24 11:57:46.0|Debug|DiskScanService|0 video files were found in /data/movies/
+2025-01-24 11:57:46.0|Debug|ImportDecisionMaker|Analyzing 0/0 files.
+2025-01-24 11:57:46.0|Debug|Api|[GET] /api/v3/manualimport?movieId=3&folder=%2Fdata%2Fmovies%2F&filterExistingFiles=false: 200.OK (35 ms)
+2025-01-24 11:57:51.0|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:57:51.0|Debug|Api|[GET] /api/v3/queue?page=1&pageSize=20&sortDirection=ascending&sortKey=timeleft&includeUnknownMovieItems=true: 200.OK (3 ms)
+2025-01-24 11:58:04.9|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:58:04.9|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:58:04.9|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:58:04.9|Debug|Api|[GET] /api/v3/health: 200.OK (3 ms)
+2025-01-24 11:58:04.9|Debug|Api|[GET] /api/v3/system/status: 200.OK (5 ms)
+2025-01-24 11:58:04.9|Debug|Api|[GET] /api/v3/diskspace: 200.OK (14 ms)
+2025-01-24 11:58:10.6|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:58:10.6|Debug|Api|[GET] /api/v3/qualitydefinition: 200.OK (12 ms)
+2025-01-24 11:58:13.9|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:58:13.9|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:58:13.9|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:58:13.9|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:58:13.9|Debug|Api|[GET] /api/v3/importlist: 200.OK (3 ms)
+2025-01-24 11:58:13.9|Debug|Api|[GET] /api/v3/config/importlist: 200.OK (8 ms)
+2025-01-24 11:58:13.9|Debug|RootFolderService|Generating list of unmapped folders
+2025-01-24 11:58:13.9|Debug|RootFolderService|2 unmapped folders detected.
+2025-01-24 11:58:13.9|Debug|Api|[GET] /api/v3/rootFolder: 200.OK (9 ms)
+2025-01-24 11:58:13.9|Debug|Api|[GET] /api/v3/exclusions/paged?page=1&pageSize=20: 200.OK (15 ms)
+2025-01-24 11:58:14.9|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:58:14.9|Debug|Api|[GET] /api/v3/importlist/schema: 200.OK (5 ms)
+2025-01-24 11:58:18.1|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:58:18.1|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:58:18.1|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:58:18.2|Debug|Api|[POST] /api/v3/importList/action/getProfiles: 200.OK (41 ms)
+2025-01-24 11:58:18.2|Debug|Api|[POST] /api/v3/importList/action/getTags: 200.OK (41 ms)
+2025-01-24 11:58:18.2|Debug|Api|[POST] /api/v3/importList/action/getRootFolders: 200.OK (40 ms)
+2025-01-24 11:58:19.4|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:58:19.5|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- BaseUrl: 'Base Url' must not be empty.
+ -- BaseUrl: must be valid URL that starts with http(s)://
+ -- ApiKey: 'Api Key' must not be empty.
+2025-01-24 11:58:19.5|Debug|Api|[POST] /api/v3/importlist/test: 400.BadRequest (31 ms)
+2025-01-24 11:58:23.3|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:58:23.3|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:58:23.3|Debug|Api|[GET] /api/v3/config/metadata: 200.OK (13 ms)
+2025-01-24 11:58:23.4|Debug|Api|[GET] /api/v3/metadata: 200.OK (25 ms)
+2025-01-24 11:58:24.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:58:24.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:58:24.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:58:24.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:58:24.8|Debug|Api|[GET] /api/v3/importlist: 200.OK (3 ms)
+2025-01-24 11:58:24.8|Debug|Api|[GET] /api/v3/tag: 200.OK (3 ms)
+2025-01-24 11:58:24.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:58:24.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:58:24.8|Debug|Api|[GET] /api/v3/releaseprofile: 200.OK (13 ms)
+2025-01-24 11:58:24.8|Debug|Api|[GET] /api/v3/notification: 200.OK (19 ms)
+2025-01-24 11:58:24.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:58:24.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:58:24.8|Debug|Api|[GET] /api/v3/delayprofile: 200.OK (18 ms)
+2025-01-24 11:58:24.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:58:24.8|Debug|Api|[GET] /api/v3/tag/detail: 200.OK (25 ms)
+2025-01-24 11:58:24.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:58:24.8|Debug|RootFolderService|Generating list of unmapped folders
+2025-01-24 11:58:24.8|Debug|RootFolderService|2 unmapped folders detected.
+2025-01-24 11:58:24.8|Debug|Api|[GET] /api/v3/rootFolder: 200.OK (10 ms)
+2025-01-24 11:58:24.8|Debug|Api|[GET] /api/v3/autoTagging: 200.OK (11 ms)
+2025-01-24 11:58:24.8|Debug|Api|[GET] /api/v3/indexer: 200.OK (21 ms)
+2025-01-24 11:58:24.8|Debug|Api|[GET] /api/v3/downloadclient: 200.OK (25 ms)
+2025-01-24 11:58:25.6|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:58:25.6|Debug|Api|[GET] /api/v3/config/host: 200.OK (43 ms)
+2025-01-24 11:58:29.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:58:29.5|Debug|Api|[GET] /api/v3/config/ui: 200.OK (3 ms)
+2025-01-24 11:58:35.8|Debug|ImportListSyncService|No enabled import lists, skipping sync and cleaning
+2025-01-24 11:58:35.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:58:35.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:58:35.8|Debug|Api|[GET] /api/v3/queue/details: 200.OK (1 ms)
+2025-01-24 11:58:35.8|Debug|DownloadedMovieImportService|Processing path: /home/(removed)/Desktop/radarr/data/downloads/www.Torrenting.com - Harry Potter and the Philosophers Stone 2001 Extended 1080p BluRay x264-OFT
+2025-01-24 11:58:35.8|Debug|Api|[GET] /api/v3/command: 200.OK (3 ms)
+2025-01-24 11:58:35.8|Error|DownloadedMovieImportService|Import failed, path does not exist or is not accessible by Radarr: /home/(removed)/Desktop/radarr/data/downloads/www.Torrenting.com - Harry Potter and the Philosophers Stone 2001 Extended 1080p BluRay x264-OFT. Ensure the path exists and the user running Radarr has the correct permissions to access this file/folder
+2025-01-24 11:58:35.8|Debug|CompletedDownloadService|Not all movies have been imported for Harry Potter and the Philosophers Stone 2001 Extended 1080p BluRay x264-OFT
+2025-01-24 11:58:35.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:58:35.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:58:35.8|Debug|Api|[GET] /api/v3/command: 200.OK (5 ms)
+2025-01-24 11:58:35.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:58:35.8|Debug|Api|[GET] /api/v3/command: 200.OK (1 ms)
+2025-01-24 11:58:35.8|Debug|Api|[GET] /api/v3/queue/details: 200.OK (9 ms)
+2025-01-24 11:58:51.9|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:58:51.9|Debug|Api|[PUT] /api/v3/config/ui: 202.Accepted (41 ms)
+2025-01-24 11:58:52.7|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:58:52.7|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (5 ms)
+2025-01-24 11:58:55.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:58:55.8|Debug|Api|[GET] /api/v3/filesystem?path=%2Fdata%2Fmovies%2F&allowFoldersWithoutTrailingSlashes=true&includeFiles=false: 200.OK (4 ms)
+2025-01-24 11:58:57.4|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:58:57.4|Debug|Api|[GET] /api/v3/health: 200.OK (1 ms)
+2025-01-24 11:58:58.1|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:58:58.1|Debug|Api|[GET] /api/v3/queue?page=1&pageSize=20&sortDirection=ascending&sortKey=timeleft&includeUnknownMovieItems=true: 200.OK (5 ms)
+2025-01-24 11:59:00.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:59:00.5|Debug|Api|[GET] /api/v3/health: 200.OK (1 ms)
+2025-01-24 11:59:00.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:59:00.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:59:00.5|Debug|Api|[GET] /api/v3/system/status: 200.OK (1 ms)
+2025-01-24 11:59:00.5|Debug|Api|[GET] /api/v3/diskspace: 200.OK (17 ms)
+2025-01-24 11:59:05.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:59:05.8|Debug|Api|[GET] /api/v3/command: 200.OK (1 ms)
+2025-01-24 11:59:57.2|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:59:57.2|Debug|Api|[GET] /api/v3/localization/language: 200.OK (5 ms)
+2025-01-24 11:59:57.2|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:59:57.2|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:59:57.2|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:59:57.2|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:59:57.2|Debug|Api|[GET] /api/v3/customFilter: 200.OK (2 ms)
+2025-01-24 11:59:57.2|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:59:57.2|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:59:57.2|Debug|Api|[GET] /api/v3/language: 200.OK (3 ms)
+2025-01-24 11:59:57.2|Debug|Api|[GET] /api/v3/qualityprofile: 200.OK (6 ms)
+2025-01-24 11:59:57.2|Debug|Api|[GET] /api/v3/tag: 200.OK (8 ms)
+2025-01-24 11:59:57.2|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:59:57.2|Debug|Api|[GET] /api/v3/indexerFlag: 200.OK (1 ms)
+2025-01-24 11:59:57.2|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:59:57.2|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:59:57.2|Debug|Api|[GET] /api/v3/movie: 200.OK (24 ms)
+2025-01-24 11:59:57.2|Debug|Api|[GET] /api/v3/collection: 200.OK (24 ms)
+2025-01-24 11:59:57.2|Debug|Api|[GET] /api/v3/config/ui: 200.OK (2 ms)
+2025-01-24 11:59:57.2|Debug|Api|[GET] /api/v3/importlist: 200.OK (3 ms)
+2025-01-24 11:59:57.2|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:59:57.2|Debug|Api|[GET] /api/v3/system/status: 200.OK (1 ms)
+2025-01-24 11:59:57.2|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:59:57.3|Debug|Api|[GET] /api/v3/localization: 200.OK (4 ms)
+2025-01-24 11:59:57.3|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: SignalR was successfully authenticated.
+2025-01-24 11:59:57.3|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:59:57.3|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:59:57.3|Debug|Api|[GET] /api/v3/queue/status: 200.OK (1 ms)
+2025-01-24 11:59:57.3|Debug|Api|[GET] /api/v3/health: 200.OK (1 ms)
+2025-01-24 11:59:57.3|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:59:57.3|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:59:57.3|Debug|Api|[GET] /api/v3/system/status: 200.OK (2 ms)
+2025-01-24 11:59:57.3|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 11:59:57.3|Debug|Api|[GET] /api/v3/health: 200.OK (1 ms)
+2025-01-24 11:59:57.3|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: SignalR was successfully authenticated.
+2025-01-24 11:59:57.3|Debug|Api|[GET] /api/v3/diskspace: 200.OK (16 ms)
+2025-01-24 12:00:03.3|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:00:03.3|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (4 ms)
+2025-01-24 12:00:03.4|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was not authenticated.
+2025-01-24 12:00:03.4|Info|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was challenged.
+2025-01-24 12:00:03.4|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was not authenticated.
+2025-01-24 12:00:03.4|Info|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was challenged.
+2025-01-24 12:00:05.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:00:05.8|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (2 ms)
+2025-01-24 12:00:05.8|Debug|DownloadedMovieImportService|Processing path: /home/(removed)/Desktop/radarr/data/downloads/www.Torrenting.com - Harry Potter and the Philosophers Stone 2001 Extended 1080p BluRay x264-OFT
+2025-01-24 12:00:05.8|Error|DownloadedMovieImportService|Import failed, path does not exist or is not accessible by Radarr: /home/(removed)/Desktop/radarr/data/downloads/www.Torrenting.com - Harry Potter and the Philosophers Stone 2001 Extended 1080p BluRay x264-OFT. Ensure the path exists and the user running Radarr has the correct permissions to access this file/folder
+2025-01-24 12:00:05.8|Debug|CompletedDownloadService|Not all movies have been imported for Harry Potter and the Philosophers Stone 2001 Extended 1080p BluRay x264-OFT
+2025-01-24 12:00:05.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:00:05.8|Debug|Api|[GET] /api/v3/command: 200.OK (1 ms)
+2025-01-24 12:00:05.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:00:05.8|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (1 ms)
+2025-01-24 12:00:05.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:00:05.8|Debug|Api|[GET] /api/v3/command: 200.OK (1 ms)
+2025-01-24 12:00:08.4|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:00:08.4|Debug|Api|[GET] /api/v3/filesystem?path=%2Fdata%2Fmovies%2F&allowFoldersWithoutTrailingSlashes=false&includeFiles=false: 200.OK (1 ms)
+2025-01-24 12:00:09.6|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:00:09.6|Debug|Api|[GET] /api/v3/filesystem?path=%2Fdata%2Fm&allowFoldersWithoutTrailingSlashes=false&includeFiles=false: 200.OK (3 ms)
+2025-01-24 12:00:09.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:00:09.8|Debug|Api|[GET] /api/v3/filesystem?path=%2Fdata%2F&allowFoldersWithoutTrailingSlashes=false&includeFiles=false: 200.OK (3 ms)
+2025-01-24 12:00:09.9|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:00:09.9|Debug|Api|[GET] /api/v3/filesystem?path=%2Fdata&allowFoldersWithoutTrailingSlashes=false&includeFiles=false: 200.OK (1 ms)
+2025-01-24 12:00:12.0|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:00:12.0|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- Path: Path '/data' is already configured as a root folder
+2025-01-24 12:00:12.0|Debug|Api|[PUT] /api/v3/movie/3?moveFiles=true: 400.BadRequest (9 ms)
+2025-01-24 12:00:13.3|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:00:13.3|Debug|Api|[GET] /api/v3/filesystem?path=%2Fdata&allowFoldersWithoutTrailingSlashes=true&includeFiles=false: 200.OK (3 ms)
+2025-01-24 12:00:14.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:00:14.5|Debug|Api|[GET] /api/v3/filesystem?path=%2Fdata%2Fmovies%2F&allowFoldersWithoutTrailingSlashes=true&includeFiles=false: 200.OK (0 ms)
+2025-01-24 12:00:17.7|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:00:17.7|Debug|Api|[GET] /api/v3/filesystem?path=%2Fdata%2Fmovies%2F&allowFoldersWithoutTrailingSlashes=false&includeFiles=false: 200.OK (0 ms)
+2025-01-24 12:00:19.0|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:00:19.0|Debug|Api|[GET] /api/v3/filesystem?path=%2Fdata%2Fmovies%2FH&allowFoldersWithoutTrailingSlashes=false&includeFiles=false: 200.OK (3 ms)
+2025-01-24 12:00:19.3|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:00:19.3|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:00:19.3|Debug|Api|[GET] /api/v3/filesystem?path=%2Fdata%2Fmovies%2FHar&allowFoldersWithoutTrailingSlashes=false&includeFiles=false: 200.OK (3 ms)
+2025-01-24 12:00:19.3|Debug|Api|[GET] /api/v3/filesystem?path=%2Fdata%2Fmovies%2FHa&allowFoldersWithoutTrailingSlashes=false&includeFiles=false: 200.OK (3 ms)
+2025-01-24 12:00:19.4|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:00:19.4|Debug|Api|[GET] /api/v3/filesystem?path=%2Fdata%2Fmovies%2FHarr&allowFoldersWithoutTrailingSlashes=false&includeFiles=false: 200.OK (3 ms)
+2025-01-24 12:00:19.7|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:00:19.7|Debug|Api|[GET] /api/v3/filesystem?path=%2Fdata%2Fmovies%2FHarry&allowFoldersWithoutTrailingSlashes=false&includeFiles=false: 200.OK (3 ms)
+2025-01-24 12:00:19.7|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:00:19.7|Debug|Api|[GET] /api/v3/filesystem?path=%2Fdata%2Fmovies%2FHarryP&allowFoldersWithoutTrailingSlashes=false&includeFiles=false: 200.OK (0 ms)
+2025-01-24 12:00:19.9|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:00:19.9|Debug|Api|[GET] /api/v3/filesystem?path=%2Fdata%2Fmovies%2FHarryPo&allowFoldersWithoutTrailingSlashes=false&includeFiles=false: 200.OK (3 ms)
+2025-01-24 12:00:19.9|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:00:19.9|Debug|Api|[GET] /api/v3/filesystem?path=%2Fdata%2Fmovies%2FHarryPot&allowFoldersWithoutTrailingSlashes=false&includeFiles=false: 200.OK (0 ms)
+2025-01-24 12:00:20.1|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:00:20.1|Debug|Api|[GET] /api/v3/filesystem?path=%2Fdata%2Fmovies%2FHarryPott&allowFoldersWithoutTrailingSlashes=false&includeFiles=false: 200.OK (0 ms)
+2025-01-24 12:00:20.1|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:00:20.1|Debug|Api|[GET] /api/v3/filesystem?path=%2Fdata%2Fmovies%2FHarryPotte&allowFoldersWithoutTrailingSlashes=false&includeFiles=false: 200.OK (0 ms)
+2025-01-24 12:00:20.2|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:00:20.2|Debug|Api|[GET] /api/v3/filesystem?path=%2Fdata%2Fmovies%2FHarryPotter&allowFoldersWithoutTrailingSlashes=false&includeFiles=false: 200.OK (1 ms)
+2025-01-24 12:00:22.1|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:00:22.1|Info|MoveMovieService|Moving Harry Potter and the Philosopher's Stone from '/data/movies/' to '/data/movies/HarryPotter'
+2025-01-24 12:00:22.1|Debug|DiskTransferService|Move Directory [/data/movies/] > [/data/movies/HarryPotter]
+2025-01-24 12:00:22.1|Debug|DiskTransferService|Rename Directory [/data/movies/] > [/data/movies/HarryPotter]
+2025-01-24 12:00:22.1|Debug|Api|[PUT] /api/v3/movie/3?moveFiles=true: 202.Accepted (29 ms)
+2025-01-24 12:00:22.1|Error|MoveMovieService|Unable to move movie from '/data/movies/' to '/data/movies/HarryPotter'. Try moving files manually
+
+[v5.16.3.9541] System.IO.IOException: Invalid argument
+   at System.IO.FileSystem.MoveDirectory(String sourceFullPath, String destFullPath)
+   at System.IO.Directory.Move(String sourceDirName, String destDirName)
+   at NzbDrone.Common.Disk.DiskProviderBase.MoveFolder(String source, String destination, Boolean overwrite) in ./Radarr.Common/Disk/DiskProviderBase.cs:line 290
+   at NzbDrone.Common.Disk.DiskTransferService.TransferFolder(String sourcePath, String targetPath, TransferMode mode) in ./Radarr.Common/Disk/DiskTransferService.cs:line 88
+   at NzbDrone.Core.Movies.MoveMovieService.MoveSingleMovie(Movie movie, String sourcePath, String destinationPath, Nullable`1 index, Nullable`1 total) in ./Radarr.Core/Movies/MoveMovieService.cs:line 70
+
+
+2025-01-24 12:00:22.2|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:00:22.2|Debug|Api|[GET] /api/v3/command: 200.OK (1 ms)
+2025-01-24 12:00:23.4|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:00:23.4|Debug|Api|[GET] /api/v3/queue?page=1&pageSize=20&sortDirection=ascending&sortKey=timeleft&includeUnknownMovieItems=true: 200.OK (4 ms)
+2025-01-24 12:00:32.7|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:00:32.7|Debug|Api|[POST] /api/v3/command: 201.Created (7 ms)
+2025-01-24 12:00:32.7|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:00:32.7|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:00:32.7|Debug|Api|[GET] /api/v3/queue?page=1&pageSize=20&sortDirection=ascending&sortKey=timeleft&includeUnknownMovieItems=true: 200.OK (3 ms)
+2025-01-24 12:00:32.7|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (3 ms)
+2025-01-24 12:00:32.7|Debug|DownloadedMovieImportService|Processing path: /home/(removed)/Desktop/radarr/data/downloads/www.Torrenting.com - Harry Potter and the Philosophers Stone 2001 Extended 1080p BluRay x264-OFT
+2025-01-24 12:00:32.7|Error|DownloadedMovieImportService|Import failed, path does not exist or is not accessible by Radarr: /home/(removed)/Desktop/radarr/data/downloads/www.Torrenting.com - Harry Potter and the Philosophers Stone 2001 Extended 1080p BluRay x264-OFT. Ensure the path exists and the user running Radarr has the correct permissions to access this file/folder
+2025-01-24 12:00:32.7|Debug|CompletedDownloadService|Not all movies have been imported for Harry Potter and the Philosophers Stone 2001 Extended 1080p BluRay x264-OFT
+2025-01-24 12:00:32.7|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:00:32.7|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:00:32.7|Debug|Api|[GET] /api/v3/command: 200.OK (1 ms)
+2025-01-24 12:00:32.7|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:00:32.7|Debug|Api|[GET] /api/v3/queue?page=1&pageSize=20&sortDirection=ascending&sortKey=timeleft&includeUnknownMovieItems=true: 200.OK (2 ms)
+2025-01-24 12:00:32.7|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:00:32.7|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (2 ms)
+2025-01-24 12:00:32.7|Debug|Api|[GET] /api/v3/command: 200.OK (1 ms)
+2025-01-24 12:00:33.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:00:33.5|Debug|Api|[GET] /api/v3/language: 200.OK (0 ms)
+2025-01-24 12:00:33.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:00:33.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:00:33.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:00:33.5|Debug|Api|[GET] /api/v3/qualityprofile/schema: 200.OK (0 ms)
+2025-01-24 12:00:33.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:00:33.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:00:33.5|Debug|Api|[GET] /api/v3/blocklist/movie?movieId=3: 200.OK (1 ms)
+2025-01-24 12:00:33.5|Debug|Api|[GET] /api/v3/extraFile?movieId=3: 200.OK (2 ms)
+2025-01-24 12:00:33.5|Debug|Api|[GET] /api/v3/movieFile?movieId=3: 200.OK (4 ms)
+2025-01-24 12:00:33.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:00:33.5|Debug|Api|[GET] /api/v3/queue/details?movieId=3: 200.OK (1 ms)
+2025-01-24 12:00:33.5|Debug|Api|[GET] /api/v3/credit?movieId=3: 200.OK (7 ms)
+2025-01-24 12:00:33.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:00:33.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:00:33.5|Debug|RootFolderService|Generating list of unmapped folders
+2025-01-24 12:00:33.5|Debug|Api|[GET] /api/v3/importlist/schema: 200.OK (4 ms)
+2025-01-24 12:00:33.5|Debug|RootFolderService|2 unmapped folders detected.
+2025-01-24 12:00:33.5|Debug|Api|[GET] /api/v3/rootFolder: 200.OK (4 ms)
+2025-01-24 12:00:36.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:00:36.8|Debug|Api|[GET] /api/v3/queue?page=1&pageSize=20&sortDirection=ascending&sortKey=timeleft&includeUnknownMovieItems=true: 200.OK (4 ms)
+2025-01-24 12:01:35.8|Debug|DownloadedMovieImportService|Processing path: /home/(removed)/Desktop/radarr/data/downloads/www.Torrenting.com - Harry Potter and the Philosophers Stone 2001 Extended 1080p BluRay x264-OFT
+2025-01-24 12:01:35.8|Error|DownloadedMovieImportService|Import failed, path does not exist or is not accessible by Radarr: /home/(removed)/Desktop/radarr/data/downloads/www.Torrenting.com - Harry Potter and the Philosophers Stone 2001 Extended 1080p BluRay x264-OFT. Ensure the path exists and the user running Radarr has the correct permissions to access this file/folder
+2025-01-24 12:01:35.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:01:35.8|Debug|CompletedDownloadService|Not all movies have been imported for Harry Potter and the Philosophers Stone 2001 Extended 1080p BluRay x264-OFT
+2025-01-24 12:01:35.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:01:35.8|Debug|Api|[GET] /api/v3/queue/details: 200.OK (1 ms)
+2025-01-24 12:01:35.8|Debug|Api|[GET] /api/v3/queue?page=1&pageSize=20&sortDirection=ascending&sortKey=timeleft&includeUnknownMovieItems=true: 200.OK (7 ms)
+2025-01-24 12:01:35.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:01:35.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:01:35.8|Debug|Api|[GET] /api/v3/command: 200.OK (1 ms)
+2025-01-24 12:01:35.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:01:35.8|Debug|Api|[GET] /api/v3/queue/details: 200.OK (6 ms)
+2025-01-24 12:01:35.8|Debug|Api|[GET] /api/v3/queue?page=1&pageSize=20&sortDirection=ascending&sortKey=timeleft&includeUnknownMovieItems=true: 200.OK (5 ms)
+2025-01-24 12:01:35.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:01:35.8|Debug|Api|[GET] /api/v3/command: 200.OK (1 ms)
+2025-01-24 12:02:52.2|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:02:52.2|Debug|Parser|Parsing string 'Harry Potter and the Philosophers Stone 2001 Extended 1080p BluRay x264-OFT'
+2025-01-24 12:02:52.2|Debug|Parser|Movie Parsed. Harry Potter and the Philosophers Stone - 2001 
+2025-01-24 12:02:52.2|Debug|Parser|Release Group parsed: OFT
+2025-01-24 12:02:52.2|Debug|Parser|Languages parsed: Unknown
+2025-01-24 12:02:52.2|Debug|QualityParser|Trying to parse quality for 'Harry Potter and the Philosophers Stone 2001 Extended 1080p BluRay x264-OFT'
+2025-01-24 12:02:52.2|Debug|Parser|Quality parsed: Bluray-1080p v1
+2025-01-24 12:02:52.2|Debug|Parser|Edition parsed: Extended
+2025-01-24 12:02:52.2|Debug|Parser|Parsing string 'Harry Potter and the Philosophers Stone 2001 Extended 1080p BluRay x264-OFT'
+2025-01-24 12:02:52.2|Debug|Parser|Movie Parsed. Harry Potter and the Philosophers Stone - 2001 
+2025-01-24 12:02:52.2|Debug|Parser|Release Group parsed: OFT
+2025-01-24 12:02:52.2|Debug|Parser|Languages parsed: Unknown
+2025-01-24 12:02:52.2|Debug|QualityParser|Trying to parse quality for 'Harry Potter and the Philosophers Stone 2001 Extended 1080p BluRay x264-OFT'
+2025-01-24 12:02:52.2|Debug|Parser|Quality parsed: Bluray-1080p v1
+2025-01-24 12:02:52.2|Debug|Parser|Edition parsed: Extended
+2025-01-24 12:02:52.2|Debug|Api|[GET] /api/v3/history?page=1&pageSize=20&sortDirection=descending&sortKey=date: 200.OK (30 ms)
+2025-01-24 12:02:55.0|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:02:55.0|Debug|Api|[GET] /api/v3/wanted/missing?page=1&pageSize=20&sortDirection=ascending&sortKey=movieMetadata.sortTitle&monitored=true: 200.OK (19 ms)
+2025-01-24 12:02:55.0|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:02:55.1|Debug|Api|[GET] /api/v3/queue/details?movieIds=3: 200.OK (1 ms)
+2025-01-24 12:03:02.4|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:03:02.4|Debug|Api|[GET] /api/v3/filesystem?path=&allowFoldersWithoutTrailingSlashes=true&includeFiles=false: 200.OK (8 ms)
+2025-01-24 12:03:06.2|Debug|DownloadedMovieImportService|Processing path: /home/(removed)/Desktop/radarr/data/downloads/www.Torrenting.com - Harry Potter and the Philosophers Stone 2001 Extended 1080p BluRay x264-OFT
+2025-01-24 12:03:06.2|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:03:06.2|Error|DownloadedMovieImportService|Import failed, path does not exist or is not accessible by Radarr: /home/(removed)/Desktop/radarr/data/downloads/www.Torrenting.com - Harry Potter and the Philosophers Stone 2001 Extended 1080p BluRay x264-OFT. Ensure the path exists and the user running Radarr has the correct permissions to access this file/folder
+2025-01-24 12:03:06.2|Debug|Api|[GET] /api/v3/queue/details?movieIds=3: 200.OK (2 ms)
+2025-01-24 12:03:06.2|Debug|CompletedDownloadService|Not all movies have been imported for Harry Potter and the Philosophers Stone 2001 Extended 1080p BluRay x264-OFT
+2025-01-24 12:03:06.2|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:03:06.2|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:03:06.2|Debug|Api|[GET] /api/v3/queue/details?movieIds=3: 200.OK (1 ms)
+2025-01-24 12:03:06.2|Debug|Api|[GET] /api/v3/command: 200.OK (1 ms)
+2025-01-24 12:03:06.2|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:03:06.2|Debug|Api|[GET] /api/v3/command: 200.OK (1 ms)
+2025-01-24 12:03:07.2|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:03:07.2|Debug|Api|[GET] /api/v3/filesystem?path=%2Fdata%2F&allowFoldersWithoutTrailingSlashes=true&includeFiles=false: 200.OK (1 ms)
+2025-01-24 12:03:08.6|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:03:08.6|Debug|Api|[GET] /api/v3/filesystem?path=%2Fdata%2Fmovies%2F&allowFoldersWithoutTrailingSlashes=true&includeFiles=false: 200.OK (2 ms)
+2025-01-24 12:03:11.6|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:03:11.6|Debug|Api|[POST] /api/v3/command: 201.Created (20 ms)
+2025-01-24 12:03:11.6|Debug|DownloadedMovieImportService|Processing path: /data/movies/
+2025-01-24 12:03:11.6|Debug|Parser|Parsing string 'movies'
+2025-01-24 12:03:11.6|Debug|Parser|Unable to parse movies
+2025-01-24 12:03:11.6|Debug|DownloadedMovieImportService|Unknown Movie movies
+2025-01-24 12:03:11.6|Debug|DownloadedMovieCommandService|Failed to import
+2025-01-24 12:03:11.6|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:03:11.6|Debug|Api|[GET] /api/v3/command: 200.OK (1 ms)
+2025-01-24 12:03:13.0|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:03:13.0|Debug|Api|[GET] /api/v3/queue?page=1&pageSize=20&sortDirection=ascending&sortKey=timeleft&includeUnknownMovieItems=true: 200.OK (4 ms)
+2025-01-24 12:03:14.1|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:03:14.1|Debug|Parser|Parsing string 'Harry Potter and the Philosophers Stone 2001 Extended 1080p BluRay x264-OFT'
+2025-01-24 12:03:14.1|Debug|Parser|Movie Parsed. Harry Potter and the Philosophers Stone - 2001 
+2025-01-24 12:03:14.1|Debug|Parser|Release Group parsed: OFT
+2025-01-24 12:03:14.1|Debug|Parser|Languages parsed: Unknown
+2025-01-24 12:03:14.1|Debug|QualityParser|Trying to parse quality for 'Harry Potter and the Philosophers Stone 2001 Extended 1080p BluRay x264-OFT'
+2025-01-24 12:03:14.1|Debug|Parser|Quality parsed: Bluray-1080p v1
+2025-01-24 12:03:14.1|Debug|Parser|Edition parsed: Extended
+2025-01-24 12:03:14.1|Debug|Parser|Parsing string 'Harry Potter and the Philosophers Stone 2001 Extended 1080p BluRay x264-OFT'
+2025-01-24 12:03:14.1|Debug|Parser|Movie Parsed. Harry Potter and the Philosophers Stone - 2001 
+2025-01-24 12:03:14.1|Debug|Parser|Release Group parsed: OFT
+2025-01-24 12:03:14.1|Debug|Parser|Languages parsed: Unknown
+2025-01-24 12:03:14.1|Debug|QualityParser|Trying to parse quality for 'Harry Potter and the Philosophers Stone 2001 Extended 1080p BluRay x264-OFT'
+2025-01-24 12:03:14.1|Debug|Parser|Quality parsed: Bluray-1080p v1
+2025-01-24 12:03:14.1|Debug|Parser|Edition parsed: Extended
+2025-01-24 12:03:14.1|Debug|Api|[GET] /api/v3/history?page=1&pageSize=20&sortDirection=descending&sortKey=date: 200.OK (10 ms)
+2025-01-24 12:03:15.0|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:03:15.0|Debug|Api|[GET] /api/v3/wanted/missing?page=1&pageSize=20&sortDirection=ascending&sortKey=movieMetadata.sortTitle&monitored=true: 200.OK (16 ms)
+2025-01-24 12:03:15.0|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:03:15.0|Debug|Api|[GET] /api/v3/queue/details?movieIds=3: 200.OK (1 ms)
+2025-01-24 12:03:20.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:03:20.8|Debug|Parser|Parsing string 'movies'
+2025-01-24 12:03:20.8|Debug|Parser|Unable to parse movies
+2025-01-24 12:03:20.8|Debug|DiskScanService|Scanning '/data/movies/' for video files
+2025-01-24 12:03:20.8|Debug|DiskScanService|0 video files were found in /data/movies/
+2025-01-24 12:03:20.8|Debug|Api|[GET] /api/v3/manualimport?folder=%2Fdata%2Fmovies%2F&filterExistingFiles=false: 200.OK (6 ms)
+2025-01-24 12:03:24.9|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:03:24.9|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (3 ms)
+2025-01-24 12:03:25.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:03:25.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:03:25.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:03:25.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:03:25.5|Debug|Api|[GET] /api/v3/qualityprofile/schema: 200.OK (1 ms)
+2025-01-24 12:03:25.5|Debug|Api|[GET] /api/v3/movieFile?movieId=3: 200.OK (1 ms)
+2025-01-24 12:03:25.5|Debug|Api|[GET] /api/v3/language: 200.OK (1 ms)
+2025-01-24 12:03:25.5|Debug|Api|[GET] /api/v3/blocklist/movie?movieId=3: 200.OK (2 ms)
+2025-01-24 12:03:25.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:03:25.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:03:25.5|Debug|Api|[GET] /api/v3/extraFile?movieId=3: 200.OK (2 ms)
+2025-01-24 12:03:25.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:03:25.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:03:25.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:03:25.5|Debug|Api|[GET] /api/v3/credit?movieId=3: 200.OK (9 ms)
+2025-01-24 12:03:25.5|Debug|Api|[GET] /api/v3/importlist/schema: 200.OK (3 ms)
+2025-01-24 12:03:25.5|Debug|Api|[GET] /api/v3/queue/details?movieId=3: 200.OK (3 ms)
+2025-01-24 12:03:25.5|Debug|RootFolderService|Generating list of unmapped folders
+2025-01-24 12:03:25.5|Debug|RootFolderService|2 unmapped folders detected.
+2025-01-24 12:03:25.5|Debug|Api|[GET] /api/v3/rootFolder: 200.OK (7 ms)
+2025-01-24 12:03:36.2|Debug|ImportListSyncService|No enabled import lists, skipping sync and cleaning
+2025-01-24 12:03:36.2|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:03:36.2|Debug|Api|[GET] /api/v3/command: 200.OK (2 ms)
+2025-01-24 12:03:36.2|Info|RssSyncService|Starting RSS Sync
+2025-01-24 12:03:36.2|Debug|FetchAndParseRssService|Available indexers 1
+2025-01-24 12:03:36.2|Debug|Torznab|Downloading Feed http://192.168.31.241:9696/1/api?t=movie&cat=2000,2020,2040,2060,2030,2045&extended=1&apikey=(removed)&offset=0&limit=100
+2025-01-24 12:03:36.4|Debug|FetchAndParseRssService|Found 4 reports
+2025-01-24 12:03:36.4|Info|DownloadDecisionMaker|Processing 4 releases
+2025-01-24 12:03:36.4|Debug|DownloadDecisionMaker|Processing release 'Lesbian Vampires (1971) 1080p h264 Spa SUB ENG MIRCrew' from 'The Pirate Bay (Prowlarr)'
+2025-01-24 12:03:36.4|Debug|Parser|Parsing string 'Lesbian Vampires (1971) 1080p h264 Spa SUB ENG MIRCrew'
+2025-01-24 12:03:36.4|Debug|Parser|Movie Parsed. Lesbian Vampires - 1971 
+2025-01-24 12:03:36.4|Debug|Parser|Release Group parsed: 
+2025-01-24 12:03:36.4|Debug|Parser|Languages parsed: English
+2025-01-24 12:03:36.4|Debug|QualityParser|Trying to parse quality for 'Lesbian Vampires (1971) 1080p h264 Spa SUB ENG MIRCrew'
+2025-01-24 12:03:36.4|Debug|Parser|Quality parsed: HDTV-1080p v1
+2025-01-24 12:03:36.4|Debug|Parser|Edition parsed: 
+2025-01-24 12:03:36.4|Debug|ParsingService|No matching movie for titles 'Lesbian Vampires (1971)'
+2025-01-24 12:03:36.4|Debug|DownloadDecisionMaker|Release 'Lesbian Vampires (1971) 1080p h264 Spa SUB ENG MIRCrew' from 'The Pirate Bay (Prowlarr)' rejected for the following reasons: [Permanent] Unknown Movie
+2025-01-24 12:03:36.4|Debug|DownloadDecisionMaker|Processing release 'Star Trek  Section 31 2025 1080p WEB-DL HEVC x265 5.1 BONE' from 'The Pirate Bay (Prowlarr)'
+2025-01-24 12:03:36.4|Debug|Parser|Parsing string 'Star Trek  Section 31 2025 1080p WEB-DL HEVC x265 5.1 BONE'
+2025-01-24 12:03:36.4|Debug|Parser|Movie Parsed. Star Trek  Section 31 - 2025 
+2025-01-24 12:03:36.4|Debug|Parser|Release Group parsed: 
+2025-01-24 12:03:36.4|Debug|Parser|Languages parsed: Unknown
+2025-01-24 12:03:36.4|Debug|QualityParser|Trying to parse quality for 'Star Trek  Section 31 2025 1080p WEB-DL HEVC x265 5.1 BONE'
+2025-01-24 12:03:36.4|Debug|Parser|Quality parsed: WEBDL-1080p v1
+2025-01-24 12:03:36.4|Debug|Parser|Edition parsed: 
+2025-01-24 12:03:36.4|Debug|ParsingService|No matching movie for titles 'Star Trek  Section 31 (2025)'
+2025-01-24 12:03:36.4|Debug|DownloadDecisionMaker|Release 'Star Trek  Section 31 2025 1080p WEB-DL HEVC x265 5.1 BONE' from 'The Pirate Bay (Prowlarr)' rejected for the following reasons: [Permanent] Unknown Movie
+2025-01-24 12:03:36.4|Debug|DownloadDecisionMaker|Processing release 'Star Trek Section 31 2025 1080p AMZN WEB-DL DDP5 1 H 264-FLUX' from 'The Pirate Bay (Prowlarr)'
+2025-01-24 12:03:36.4|Debug|Parser|Parsing string 'Star Trek Section 31 2025 1080p AMZN WEB-DL DDP5 1 H 264-FLUX'
+2025-01-24 12:03:36.4|Debug|Parser|Movie Parsed. Star Trek Section 31 - 2025 
+2025-01-24 12:03:36.4|Debug|Parser|Release Group parsed: FLUX
+2025-01-24 12:03:36.4|Debug|Parser|Languages parsed: Unknown
+2025-01-24 12:03:36.4|Debug|QualityParser|Trying to parse quality for 'Star Trek Section 31 2025 1080p AMZN WEB-DL DDP5 1 H 264-FLUX'
+2025-01-24 12:03:36.4|Debug|Parser|Quality parsed: WEBDL-1080p v1
+2025-01-24 12:03:36.4|Debug|Parser|Edition parsed: 
+2025-01-24 12:03:36.4|Debug|ParsingService|No matching movie for titles 'Star Trek Section 31 (2025)'
+2025-01-24 12:03:36.4|Debug|DownloadDecisionMaker|Release 'Star Trek Section 31 2025 1080p AMZN WEB-DL DDP5 1 H 264-FLUX' from 'The Pirate Bay (Prowlarr)' rejected for the following reasons: [Permanent] Unknown Movie
+2025-01-24 12:03:36.4|Debug|DownloadDecisionMaker|Processing release 'Nightbitch 2024 REPACK 1080p DSNP WEB-DL DDP5 1 Atmos H 264-FLUX' from 'The Pirate Bay (Prowlarr)'
+2025-01-24 12:03:36.4|Debug|Parser|Parsing string 'Nightbitch 2024 REPACK 1080p DSNP WEB-DL DDP5 1 Atmos H 264-FLUX'
+2025-01-24 12:03:36.4|Debug|Parser|Movie Parsed. Nightbitch - 2024 
+2025-01-24 12:03:36.4|Debug|Parser|Release Group parsed: FLUX
+2025-01-24 12:03:36.4|Debug|Parser|Languages parsed: Unknown
+2025-01-24 12:03:36.4|Debug|QualityParser|Trying to parse quality for 'Nightbitch 2024 REPACK 1080p DSNP WEB-DL DDP5 1 Atmos H 264-FLUX'
+2025-01-24 12:03:36.4|Debug|Parser|Quality parsed: WEBDL-1080p v2
+2025-01-24 12:03:36.4|Debug|Parser|Edition parsed: 
+2025-01-24 12:03:36.4|Debug|ParsingService|No matching movie for titles 'Nightbitch (2024)'
+2025-01-24 12:03:36.4|Debug|DownloadDecisionMaker|Release 'Nightbitch 2024 REPACK 1080p DSNP WEB-DL DDP5 1 Atmos H 264-FLUX' from 'The Pirate Bay (Prowlarr)' rejected for the following reasons: [Permanent] Unknown Movie
+2025-01-24 12:03:36.4|Info|RssSyncService|RSS Sync Completed. Reports found: 4, Reports grabbed: 0
+2025-01-24 12:03:36.4|Debug|PendingReleaseService|Removing failed releases from pending
+2025-01-24 12:03:36.4|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:03:36.4|Debug|Api|[GET] /api/v3/command: 200.OK (1 ms)
+2025-01-24 12:03:43.3|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:03:43.3|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:03:43.3|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:03:43.3|Debug|Api|[GET] /api/v3/health: 200.OK (4 ms)
+2025-01-24 12:03:43.3|Debug|Api|[GET] /api/v3/system/status: 200.OK (4 ms)
+2025-01-24 12:03:43.3|Debug|Api|[GET] /api/v3/diskspace: 200.OK (15 ms)
+2025-01-24 12:04:06.2|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:04:06.2|Debug|Api|[GET] /api/v3/command: 200.OK (1 ms)
+2025-01-24 12:04:06.2|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:04:06.2|Debug|Api|[GET] /api/v3/queue/details: 200.OK (1 ms)
+2025-01-24 12:04:06.2|Debug|DownloadedMovieImportService|Processing path: /home/(removed)/Desktop/radarr/data/downloads/www.Torrenting.com - Harry Potter and the Philosophers Stone 2001 Extended 1080p BluRay x264-OFT
+2025-01-24 12:04:06.2|Error|DownloadedMovieImportService|Import failed, path does not exist or is not accessible by Radarr: /home/(removed)/Desktop/radarr/data/downloads/www.Torrenting.com - Harry Potter and the Philosophers Stone 2001 Extended 1080p BluRay x264-OFT. Ensure the path exists and the user running Radarr has the correct permissions to access this file/folder
+2025-01-24 12:04:06.2|Debug|CompletedDownloadService|Not all movies have been imported for Harry Potter and the Philosophers Stone 2001 Extended 1080p BluRay x264-OFT
+2025-01-24 12:04:06.2|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:04:06.2|Debug|Api|[GET] /api/v3/command: 200.OK (1 ms)
+2025-01-24 12:04:06.2|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:04:06.2|Debug|Api|[GET] /api/v3/queue/details: 200.OK (1 ms)
+2025-01-24 12:04:06.2|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-01-24 12:04:06.2|Debug|Api|[GET] /api/v3/command: 200.OK (0 ms)
+2025-01-24 12:05:29.3|Info|Microsoft.Hosting.Lifetime|Application is shutting down...
+2025-01-24 12:05:29.3|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: SignalR was successfully authenticated.
+2025-01-24 12:05:29.7|Info|ConsoleApp|Exiting main.

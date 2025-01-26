@@ -3510,3 +3510,131 @@ Data: {"type":"Buffer","data":[60,33,100,111,99,116,121,112,101,32,104,116,109,1
   }
 ]
 [2025-01-20T17:24:20.963Z] error: <credentialedProxyHandler> HTTP Error 500 calling http://192.168.0.115:2283/api/server/statistics
+[2025-01-25T17:52:00.240Z] error: <httpProxy> Error calling http://192.168.31.241:81/api/tokens...
+[2025-01-25T17:52:00.245Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 192.168.31.241:81
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '192.168.31.241',
+    port: 81
+  }
+]
+[2025-01-25T17:52:00.246Z] error: <npmProxyHandler> Error 500 logging into npm {"error":{"message":"Unknown error","url":"http://192.168.31.241:81/api/tokens","rawError":[500,{"errno":-111,"code":"ECONNREFUSED","syscall":"connect","address":"192.168.31.241","port":81}]}}
+[2025-01-25T17:52:00.333Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://api.tailscale.com/api/v2/device/noswsUktJC11CNTRL
+[2025-01-25T17:54:15.673Z] error: <httpProxy> Error calling http://192.168.0.115:2283/api/server/statistics...
+[2025-01-25T17:54:15.674Z] error: <httpProxy> [
+  500,
+  Error: connect ETIMEDOUT 192.168.0.115:2283
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -110,
+    code: 'ETIMEDOUT',
+    syscall: 'connect',
+    address: '192.168.0.115',
+    port: 2283
+  }
+]
+[2025-01-25T17:54:15.675Z] error: <credentialedProxyHandler> HTTP Error 500 calling http://192.168.0.115:2283/api/server/statistics
+[2025-01-25T17:54:15.675Z] error: <httpProxy> Error calling http://192.168.0.115:2283/api/server/version...
+[2025-01-25T17:54:15.676Z] error: <httpProxy> [
+  500,
+  Error: connect ETIMEDOUT 192.168.0.115:2283
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -110,
+    code: 'ETIMEDOUT',
+    syscall: 'connect',
+    address: '192.168.0.115',
+    port: 2283
+  }
+]
+[2025-01-25T17:54:15.676Z] error: <credentialedProxyHandler> HTTP Error 500 calling http://192.168.0.115:2283/api/server/version
+[2025-01-25T17:59:20.255Z] error: <httpProxy> Error calling http://192.168.31.241:81/api/tokens...
+[2025-01-25T17:59:20.260Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 192.168.31.241:81
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '192.168.31.241',
+    port: 81
+  }
+]
+[2025-01-25T17:59:20.261Z] error: <npmProxyHandler> Error 500 logging into npm {"error":{"message":"Unknown error","url":"http://192.168.31.241:81/api/tokens","rawError":[500,{"errno":-111,"code":"ECONNREFUSED","syscall":"connect","address":"192.168.31.241","port":81}]}}
+[2025-01-25T17:59:20.274Z] error: <httpProxy> Error calling http://192.168.31.241:8123/api/template...
+[2025-01-25T17:59:20.274Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 192.168.31.241:8123
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '192.168.31.241',
+    port: 8123
+  }
+]
+[2025-01-25T17:59:20.275Z] error: <httpProxy> Error calling http://192.168.31.241:8123/api/template...
+[2025-01-25T17:59:20.276Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 192.168.31.241:8123
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '192.168.31.241',
+    port: 8123
+  }
+]
+[2025-01-25T17:59:20.276Z] error: <httpProxy> Error calling http://192.168.31.241:8123/api/template...
+[2025-01-25T17:59:20.277Z] error: <httpProxy> [
+  500,
+  Error: connect ECONNREFUSED 192.168.31.241:8123
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -111,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '192.168.31.241',
+    port: 8123
+  }
+]
+[2025-01-25T17:59:20.329Z] error: <credentialedProxyHandler> HTTP Error 401 calling https://api.tailscale.com/api/v2/device/noswsUktJC11CNTRL
+[2025-01-25T18:00:14.828Z] error: <httpProxy> Error calling http://192.168.31.241:3001/api/status-page/home...
+[2025-01-25T18:00:14.829Z] error: <httpProxy> [
+  500,
+  Error: socket hang up
+      at connResetException (node:internal/errors:720:14)
+      at Socket.socketOnEnd (node:_http_client:525:23)
+      at Socket.emit (node:events:529:35)
+      at endReadableNT (node:internal/streams/readable:1400:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    code: 'ECONNRESET'
+  }
+]
+[2025-01-25T18:01:33.945Z] error: <httpProxy> Error calling http://192.168.0.115:2283/api/server/statistics...
+[2025-01-25T18:01:33.946Z] error: <httpProxy> [
+  500,
+  Error: connect ETIMEDOUT 192.168.0.115:2283
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -110,
+    code: 'ETIMEDOUT',
+    syscall: 'connect',
+    address: '192.168.0.115',
+    port: 2283
+  }
+]
+[2025-01-25T18:01:33.946Z] error: <credentialedProxyHandler> HTTP Error 500 calling http://192.168.0.115:2283/api/server/statistics
+[2025-01-25T18:01:33.946Z] error: <httpProxy> Error calling http://192.168.0.115:2283/api/server/version...
+[2025-01-25T18:01:33.947Z] error: <httpProxy> [
+  500,
+  Error: connect ETIMEDOUT 192.168.0.115:2283
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16) {
+    errno: -110,
+    code: 'ETIMEDOUT',
+    syscall: 'connect',
+    address: '192.168.0.115',
+    port: 2283
+  }
+]
+[2025-01-25T18:01:33.947Z] error: <credentialedProxyHandler> HTTP Error 500 calling http://192.168.0.115:2283/api/server/version
